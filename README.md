@@ -15,7 +15,7 @@ Compiled by filtering the multimodal entries of three awesome lists and augmente
 
 Each paper is summarized along **four questions**: ① Problem & why it matters · ② Method & key contribution · ③ Task / dataset / model · ④ Limitations & future work. ⭐ Stars and Citations are **refreshed daily** by [a GitHub Action](.github/workflows/refresh.yml).
 
-> 🔄 **Stats last updated: 2026-06-18 05:32 UTC** · ⭐ stars via GitHub API · Citations via Semantic Scholar (Google Scholar has no public API and is blocked in CI; see [`scripts/update_stats.py`](scripts/update_stats.py)).
+> 🔄 **Stats last updated: 2026-06-18 05:33 UTC** · ⭐ stars via GitHub API · Citations via Semantic Scholar (Google Scholar has no public API and is blocked in CI; see [`scripts/update_stats.py`](scripts/update_stats.py)).
 
 ## 📊 Overview
 
