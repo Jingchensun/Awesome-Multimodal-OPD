@@ -1,0 +1,69 @@
+name: Refresh stats & pages
+
+# Daily refresh of GitHub stars + citations, regenerate README.md and index.html,
+# commit changes, and (re)deploy the interactive HTML to GitHub Pages.
+on:
+  schedule:
+    - cron: "17 3 * * *"   # every day at 03:17 UTC
+  workflow_dispatch: {}     # manual "Run workflow" button
+  push:
+    branches: [main]
+    paths: ["papers.json", "scripts/update_stats.py", ".github/workflows/refresh.yml"]
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+concurrency:
+  group: refresh-pages
+  cancel-in-progress: false
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.x"
+
+      - name: Refresh stars + citations, regenerate README & HTML
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: python scripts/update_stats.py
+
+      - name: Commit changes (if any)
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add README.md index.html data/stats.json
+          if git diff --cached --quiet; then
+            echo "No changes."
+          else
+            git commit -m "chore: daily refresh stars & citations [skip ci]"
+            git push
+          fi
+
+      # ---- Deploy index.html to GitHub Pages ----
+      - name: Configure Pages
+        uses: actions/configure-pages@v5
+        continue-on-error: true
+
+      - name: Upload site artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: .
+
+  deploy-pages:
+    needs: refresh
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
+        continue-on-error: true
