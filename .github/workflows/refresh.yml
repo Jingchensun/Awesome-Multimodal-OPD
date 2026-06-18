@@ -47,8 +47,10 @@ jobs:
           fi
 
       # ---- Deploy index.html to GitHub Pages ----
-      - name: Configure Pages
+      - name: Configure Pages (auto-enable)
         uses: actions/configure-pages@v5
+        with:
+          enablement: true
         continue-on-error: true
 
       - name: Upload site artifact
