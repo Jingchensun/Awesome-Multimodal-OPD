@@ -109,7 +109,7 @@ def build_readme(src, stats):
     cats = src["categories"]; papers = src["papers"]
     by = {c["key"]: [] for c in cats}
     for p in papers: by[p["category"]].append(p)
-    for k in by: by[k].sort(key=lambda p: -(stats.get(p["id"], {}).get("citations") or -1))
+    for k in by: by[k].sort(key=lambda p: (stats.get(p["id"], {}).get("date") or "", stats.get(p["id"], {}).get("citations") or 0), reverse=True)  # newest first
     total = len(papers)
     nweb = sum(1 for p in papers if p["id"] in WEB_IDS)
     updated = stats.get("_updated", "")
@@ -197,7 +197,7 @@ def build_html(src, stats):
     cats = src["categories"]; papers = src["papers"]
     by = {c["key"]: [] for c in cats}
     for p in papers: by[p["category"]].append(p)
-    for k in by: by[k].sort(key=lambda p: -(stats.get(p["id"], {}).get("citations") or -1))
+    for k in by: by[k].sort(key=lambda p: (stats.get(p["id"], {}).get("date") or "", stats.get(p["id"], {}).get("citations") or 0), reverse=True)  # newest first
     updated = stats.get("_updated", "")
     total = len(papers)
 
