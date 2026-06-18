@@ -15,7 +15,7 @@
 
 Each paper is tagged with **arXiv link · date · first-author affiliation · code · ⭐ stars · citations**. ⭐ Stars and citations are **refreshed daily** by [a GitHub Action](.github/workflows/refresh.yml) (⭐ via GitHub API; citations via Semantic Scholar). For four-point summaries per paper, open the [interactive reader](https://jingchensun.github.io/Awesome-Multimodal-OPD/).
 
-> 🔄 **Stats last updated: 2026-06-18 06:25 UTC**
+> 🔄 **Stats last updated: 2026-06-18 06:26 UTC**
 
 ## 📊 Overview
 
