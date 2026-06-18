@@ -25,6 +25,7 @@ README = os.path.join(ROOT, "README.md")
 HTMLF  = os.path.join(ROOT, "index.html")
 REPO   = "Jingchensun/Awesome-Multimodal-OPD"
 GH_TOKEN = os.environ.get("GITHUB_TOKEN") or os.environ.get("GH_TOKEN")
+WEB_IDS = ("2412.01694", "2508.04416")  # entries added via web search (not in source repos)
 
 def log(*a): print(*a, file=sys.stderr)
 
@@ -110,7 +111,7 @@ def build_readme(src, stats):
     for p in papers: by[p["category"]].append(p)
     for k in by: by[k].sort(key=lambda p: -(stats.get(p["id"], {}).get("citations") or -1))
     total = len(papers)
-    nweb = sum(1 for p in papers if p["id"] in ("2412.01694", "2508.04416", "2603.21426"))
+    nweb = sum(1 for p in papers if p["id"] in WEB_IDS)
     updated = stats.get("_updated", "")
     preview = f"https://htmlpreview.github.io/?https://github.com/{REPO}/blob/main/index.html"
     pages = f"https://{REPO.split('/')[0].lower()}.github.io/{REPO.split('/')[1]}/"
@@ -121,32 +122,31 @@ def build_readme(src, stats):
     w("> A curated, **auto-refreshed** list of **multimodal On-Policy Distillation (OPD / OPSD)** papers — "
       "organized by **Image QA · Video QA · Audio QA** (plus generation, speculative decoding, and embodied/VLA).")
     w("")
-    w(f"![papers](https://img.shields.io/badge/papers-{total}-4E6813?style=for-the-badge) "
-      f"![web--added](https://img.shields.io/badge/web--added-{nweb}-2E86C1?style=for-the-badge) "
-      f"![updated](https://img.shields.io/badge/stats_updated-{updated.split(' ')[0].replace('-', '.')}-purple?style=for-the-badge)")
+    # ---- prominent interactive-reader banner ----
+    w('<p align="center">')
+    w(f'  <a href="{pages}"><img src="https://img.shields.io/badge/%F0%9F%9A%80%20OPEN%20INTERACTIVE%20READER-Search%20%C2%B7%20Filter%20%C2%B7%20EN%2F%E4%B8%AD%E6%96%87-1f6feb?style=for-the-badge&logoColor=white" alt="Open Interactive Reader"></a>')
+    w(f'  <a href="{preview}"><img src="https://img.shields.io/badge/mirror-htmlpreview-555?style=for-the-badge" alt="htmlpreview mirror"></a>')
+    w('</p>')
     w("")
-    w(f"### 👉 [**Browse interactively (HTML)**]({preview})")
+    w(f'<p align="center"><b>👉 <a href="{pages}">Live interactive reader</a></b> — searchable, filterable, '
+      f'bilingual (EN / 中文), one click, no install &nbsp;·&nbsp; '
+      f'<a href="{preview}">instant mirror (no Pages needed)</a></p>')
     w("")
-    w(f"Open the searchable, filterable visual reader — one click, no install: **[{preview}]({preview})**  ")
-    w(f"(If GitHub Pages is enabled for this repo, it is also served at [{pages}]({pages}).)")
-    w("")
-    w("Compiled by filtering the multimodal entries of three awesome lists and augmented with web search: "
-      "[thinkwee/AwesomeOPD](https://github.com/thinkwee/AwesomeOPD) · "
-      "[chrisliu298/awesome-on-policy-distillation](https://github.com/chrisliu298/awesome-on-policy-distillation) · "
-      "[nick7nlp/Awesome-LLM-On-Policy-Distillation](https://github.com/nick7nlp/Awesome-LLM-On-Policy-Distillation).")
+    w(f"![papers](https://img.shields.io/badge/papers-{total}-4E6813?style=flat-square) "
+      f"![web--added](https://img.shields.io/badge/web--added-{nweb}-2E86C1?style=flat-square) "
+      f"![updated](https://img.shields.io/badge/stats_updated-{updated.split(' ')[0].replace('-', '.')}-purple?style=flat-square)")
     w("")
     w("**What is OPD?** `C1`: the student samples its own trajectories `y ~ π_student(·|x)` during training; "
       "`C2`: a teacher provides per-token / sequence-level supervision on those **student-generated** samples. "
       "**OPSD** is the special case where the teacher is the *same model* conditioned on privileged information.")
     w("")
-    w("Each paper is summarized along **four questions**: ① Problem & why it matters · ② Method & key contribution · "
-      "③ Task / dataset / model · ④ Limitations & future work. ⭐ Stars and Citations are **refreshed daily** by "
-      "[a GitHub Action](.github/workflows/refresh.yml).")
+    w("Each paper is tagged with **arXiv link · date · first-author affiliation · code · ⭐ stars · citations**. "
+      "⭐ Stars and citations are **refreshed daily** by [a GitHub Action](.github/workflows/refresh.yml) "
+      "(⭐ via GitHub API; citations via Semantic Scholar). For four-point summaries per paper, open the "
+      f"[interactive reader]({pages}).")
     w("")
-    w(f"> 🔄 **Stats last updated: {updated}** · ⭐ stars via GitHub API · Citations via Semantic Scholar "
-      "(Google Scholar has no public API and is blocked in CI; see [`scripts/update_stats.py`](scripts/update_stats.py)).")
+    w(f"> 🔄 **Stats last updated: {updated}**")
     w("")
-    # overview
     w("## 📊 Overview")
     w("")
     w("| Subfield | # |")
@@ -154,53 +154,36 @@ def build_readme(src, stats):
     for c in cats: w(f"| {c['title']} | {len(by[c['key']])} |")
     w(f"| **Total** | **{total}** |")
     w("")
-    # sections
     for c in cats:
         w(f"## {c['title']}")
         w("")
         w(c["desc"])
         w("")
-        w("| Paper | arXiv | Date | Code | ⭐ Stars | Citations | Type |")
-        w("| :-- | :--: | :--: | :--: | :--: | :--: | :--: |")
+        w("| Paper | arXiv | Date | First-author affiliation | Code | ⭐ Stars | Citations |")
+        w("| :-- | :--: | :--: | :-- | :--: | :--: | :--: |")
         for p in by[c["key"]]:
             s = stats.get(p["id"], {})
-            web = "🔎 " if p["id"] in ("2412.01694","2508.04416","2603.21426") else ""
+            web = "🔎 " if p["id"] in WEB_IDS else ""
             ttl = p["title"].replace("|", "/")
             repo = p.get("repo")
             code = f"[GitHub](https://github.com/{repo})" if repo else "—"
             stars = human(s.get("stars")) if repo else "—"
             cit = s.get("citations"); cit = str(cit) if cit is not None else "—"
-            w(f"| {web}{ttl} | [link]({arxiv_url(p['id'])}) | {s.get('date','—')} | {code} | {stars} | {cit} | {p['strict']} |")
+            aff = (p.get("affiliation") or "—").replace("|", "/")
+            w(f"| {web}{ttl} | [link]({arxiv_url(p['id'])}) | {s.get('date','—')} | {aff} | {code} | {stars} | {cit} |")
         w("")
-        for p in by[c["key"]]:
-            s = stats.get(p["id"], {}); web = "🔎 " if p["id"] in ("2412.01694","2508.04416","2603.21426") else ""
-            repo = p.get("repo")
-            links = f"[arXiv]({arxiv_url(p['id'])})" + (f" · [code](https://github.com/{repo})" if repo else "")
-            meta = f"`{p['venue']}` · 📅 {s.get('date','—')} · {links}"
-            if repo: meta += f" · ⭐ {human(s.get('stars'))}"
-            cit = s.get('citations'); meta += f" · cited {cit if cit is not None else '—'} · `{p['strict']}`"
-            w("<details>")
-            w(f"<summary><b>{web}{p['title']}</b></summary>")
-            w("")
-            w(meta)
-            w("")
-            w(f"- **① Problem & importance**: {p['q1']}")
-            w(f"- **② Method & contribution**: {p['q2']}")
-            w(f"- **③ Task / dataset / model**: {p['q3']}")
-            w(f"- **④ Limitations & future work**: {p['q4']}")
-            w("")
-            w("</details>")
-            w("")
-        w("")
-    w("## 🙏 Acknowledgments & Notes")
+    w("## 🙏 Acknowledgments")
     w("")
-    w("- Paper sources and four-point summaries are compiled from the three source awesome lists, the papers' arXiv "
-      "abstracts, and public materials; errors are possible — **please refer to the original papers**.")
-    w("- 🔎 Web-added entries: [AoTD](https://arxiv.org/abs/2412.01694) · "
-      "[VITAL / Thinking With Videos](https://arxiv.org/abs/2508.04416) · "
-      "[β-KD (Uncertainty-Aware KD, CVPR 2026)](https://arxiv.org/abs/2603.21426).")
-    w("- ⭐ stars and citations auto-update daily via GitHub Actions; numbers are a snapshot and change over time.")
-    w("- To add a paper: edit [`papers.json`](papers.json) and the table/HTML regenerate automatically.")
+    w("This list is compiled and de-duplicated from three awesome repositories, plus web search for a few "
+      "multimodal entries missing from them. Full credit to the maintainers of:")
+    w("")
+    w("- [thinkwee/AwesomeOPD](https://github.com/thinkwee/AwesomeOPD)")
+    w("- [chrisliu298/awesome-on-policy-distillation](https://github.com/chrisliu298/awesome-on-policy-distillation)")
+    w("- [nick7nlp/Awesome-LLM-On-Policy-Distillation](https://github.com/nick7nlp/Awesome-LLM-On-Policy-Distillation)")
+    w("")
+    w("Summaries are paraphrased from the papers' arXiv abstracts and may contain errors — please refer to the "
+      "original papers. To add a paper, edit [`papers.json`](papers.json); the tables and the interactive reader "
+      "regenerate automatically. ⭐ stars and citations are snapshots that change over time.")
     w("")
     w("## 📄 License")
     w("")
@@ -210,7 +193,6 @@ def build_readme(src, stats):
     with open(README, "w", encoding="utf-8") as f: f.write("\n".join(L))
     log("wrote README.md")
 
-# ---------------- HTML ----------------
 def build_html(src, stats):
     cats = src["categories"]; papers = src["papers"]
     by = {c["key"]: [] for c in cats}
@@ -230,9 +212,10 @@ def build_html(src, stats):
 
     def card(p):
         s = stats.get(p["id"], {}); idv = p["id"]; repo = p.get("repo")
-        web = '<span class="src-web">🔎 web</span>' if idv in ("2412.01694","2508.04416","2603.21426") else ""
+        web = '<span class="src-web">🔎 web</span>' if idv in WEB_IDS else ""
         b = [f'<a class="b b-arxiv" href="{arxiv_url(idv)}" target="_blank">arXiv {idv}</a>',
              f'<span class="b b-date">📅 {s.get("date","—")}</span>',
+             f'<span class="b b-aff">🏛 {esc(p.get("affiliation","—"))}</span>',
              f'<span class="b b-venue">{esc(p["venue"])}</span>',
              f'<span class="b b-cite">🔖 {t("cited","被引")} {s.get("citations") if s.get("citations") is not None else "—"}</span>']
         if repo:
@@ -243,7 +226,7 @@ def build_html(src, stats):
         qrows = "".join(
             f'<p><b class="q {qk}">{t(en,zh)}</b>{t(p.get(qk,""), p.get(qk+"_zh",""))}</p>'
             for qk,en,zh in QL)
-        hay = (p["title"]+" "+p["sub"]+" "+p["venue"]+" "+idv+" "+(repo or "")
+        hay = (p["title"]+" "+p["sub"]+" "+p["venue"]+" "+idv+" "+(repo or "")+" "+p.get("affiliation","")
                +p["q1"]+p["q2"]+p["q3"]+p["q4"]
                +p.get("q1_zh","")+p.get("q2_zh","")+p.get("q3_zh","")+p.get("q4_zh","")).lower()
         return (f'<div class="card" data-hay="{esc(hay)}"><div class="card-head">'
@@ -290,6 +273,7 @@ section{{margin:28px 0 10px;scroll-margin-top:130px}}.sec-head h2{{font-size:18.
 .b{{font-size:11.5px;padding:3px 8px;border-radius:7px;text-decoration:none;border:1px solid var(--bd);color:var(--fg);white-space:nowrap}}
 .b-arxiv{{background:#19233a;border-color:#2e4470;color:#bcd0ff}}.b-venue{{background:#1d2433;color:var(--mut)}}
 .b-date{{background:#16231d;border-color:#2f5a3e;color:#a8e6c0}}
+.b-aff{{background:#1e1a24;border-color:#4a3a5e;color:#cdb6e6}}
 .b-cite{{background:#23201a;border-color:#5a4a2a;color:#ffd9a0}}.b-gh{{background:#161b22;border-color:#33415c;color:#cbd5e6;max-width:100%;overflow:hidden;text-overflow:ellipsis}}
 .b-nogh{{background:#1b1f27;color:var(--mut)}}.b-strict{{background:#241a26;border-color:#5a3a5e;color:#e6a9e0}}
 .qa p{{margin:0 0 9px;font-size:13.3px;color:#d7dce6}}.qa .q{{display:block;font-size:11.5px;margin-bottom:1px}}
