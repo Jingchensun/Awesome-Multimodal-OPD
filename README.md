@@ -9,13 +9,13 @@
 
 <p align="center"><b>👉 <a href="https://jingchensun.github.io/Awesome-Multimodal-OPD/">Live interactive reader</a></b> — searchable, filterable, bilingual (EN / 中文), one click, no install &nbsp;·&nbsp; <a href="https://htmlpreview.github.io/?https://github.com/Jingchensun/Awesome-Multimodal-OPD/blob/main/index.html">instant mirror (no Pages needed)</a></p>
 
-![papers](https://img.shields.io/badge/papers-52-4E6813?style=flat-square) ![web--added](https://img.shields.io/badge/web--added-2-2E86C1?style=flat-square) ![updated](https://img.shields.io/badge/stats_updated-2026.07.06-purple?style=flat-square)
+![papers](https://img.shields.io/badge/papers-52-4E6813?style=flat-square) ![web--added](https://img.shields.io/badge/web--added-2-2E86C1?style=flat-square) ![updated](https://img.shields.io/badge/stats_updated-2026.07.07-purple?style=flat-square)
 
 **What is OPD?** `C1`: the student samples its own trajectories `y ~ π_student(·|x)` during training; `C2`: a teacher provides per-token / sequence-level supervision on those **student-generated** samples. **OPSD** is the special case where the teacher is the *same model* conditioned on privileged information.
 
 Each paper is tagged with **arXiv link · date · first-author affiliation · code · ⭐ stars · citations**. ⭐ Stars and citations are **refreshed daily** by [a GitHub Action](.github/workflows/refresh.yml) (⭐ via GitHub API; citations via Semantic Scholar). For four-point summaries per paper, open the [interactive reader](https://jingchensun.github.io/Awesome-Multimodal-OPD/).
 
-> 🔄 **Stats last updated: 2026-07-06 07:55 UTC**
+> 🔄 **Stats last updated: 2026-07-07 06:55 UTC**
 
 ## 📊 Overview
 
@@ -75,7 +75,7 @@ Cross-modal transfer of text reasoning into audio/speech, and OPD for audio unde
 | Qwen3.5-Omni Technical Report | [link](https://arxiv.org/abs/2604.15804) | 2026-04-17 | Alibaba | — | — | 60 |
 | X-OPD: Cross-Modal On-Policy Distillation for Capability Alignment in Speech LLMs | [link](https://arxiv.org/abs/2603.24596) | 2026-03-06 | Tencent Hunyuan | — | — | 6 |
 | CORD: Bridging the Audio-Text Reasoning Gap via Weighted On-policy Cross-modal Distillation | [link](https://arxiv.org/abs/2601.16547) | 2026-01-23 | Baidu | — | — | 5 |
-| Step-Audio-R1 Technical Report | [link](https://arxiv.org/abs/2511.15848) | 2025-11-19 | StepFun | [GitHub](https://github.com/stepfun-ai/Step-Audio-R1) | 682 | 30 |
+| Step-Audio-R1 Technical Report | [link](https://arxiv.org/abs/2511.15848) | 2025-11-19 | StepFun | [GitHub](https://github.com/stepfun-ai/Step-Audio-R1) | 684 | 30 |
 | Qwen3-Omni Technical Report | [link](https://arxiv.org/abs/2509.17765) | 2025-09-22 | Alibaba | — | — | 355 |
 
 ## 🎨 Image / Video Generation (Diffusion · Flow)
@@ -94,7 +94,7 @@ OPD / self-distillation for diffusion and flow-matching generative models (few-s
 | Flow-OPD: On-Policy Distillation for Flow Matching Models | [link](https://arxiv.org/abs/2605.08063) | 2026-05-08 | USTC | — | — | 5 |
 | D-OPSD: On-Policy Self-Distillation for Continuously Tuning Step-Distilled Diffusion Models | [link](https://arxiv.org/abs/2605.05204) | 2026-05-06 | HKUST | — | — | 5 |
 | LiveTalk: Real-Time Multimodal Interactive Video Diffusion via Improved On-Policy Distillation | [link](https://arxiv.org/abs/2512.23576) | 2025-12-29 | SII / SJTU | — | — | 6 |
-| pi-Flow: Policy-Based Few-Step Generation via Imitation Distillation | [link](https://arxiv.org/abs/2510.14974) | 2025-10-16 | Stanford University | [GitHub](https://github.com/Lakonik/piFlow) | 444 | 20 |
+| pi-Flow: Policy-Based Few-Step Generation via Imitation Distillation | [link](https://arxiv.org/abs/2510.14974) | 2025-10-16 | Stanford University | [GitHub](https://github.com/Lakonik/piFlow) | 446 | 20 |
 | Di$\mathtt{[M]}$O: Distilling Masked Diffusion Models into One-step Generator | [link](https://arxiv.org/abs/2503.15457) | 2025-03-19 | École Polytechnique | — | — | 6 |
 
 ## ⚡ Multimodal Speculative-Decoding Distillation
