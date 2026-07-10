@@ -9,13 +9,13 @@
 
 <p align="center"><b>👉 <a href="https://jingchensun.github.io/Awesome-Multimodal-OPD/">Live interactive reader</a></b> — searchable, filterable, bilingual (EN / 中文), one click, no install &nbsp;·&nbsp; <a href="https://htmlpreview.github.io/?https://github.com/Jingchensun/Awesome-Multimodal-OPD/blob/main/index.html">instant mirror (no Pages needed)</a></p>
 
-![papers](https://img.shields.io/badge/papers-52-4E6813?style=flat-square) ![web--added](https://img.shields.io/badge/web--added-2-2E86C1?style=flat-square) ![updated](https://img.shields.io/badge/stats_updated-2026.07.09-purple?style=flat-square)
+![papers](https://img.shields.io/badge/papers-52-4E6813?style=flat-square) ![web--added](https://img.shields.io/badge/web--added-2-2E86C1?style=flat-square) ![updated](https://img.shields.io/badge/stats_updated-2026.07.10-purple?style=flat-square)
 
 **What is OPD?** `C1`: the student samples its own trajectories `y ~ π_student(·|x)` during training; `C2`: a teacher provides per-token / sequence-level supervision on those **student-generated** samples. **OPSD** is the special case where the teacher is the *same model* conditioned on privileged information.
 
 Each paper is tagged with **arXiv link · date · first-author affiliation · code · ⭐ stars · citations**. ⭐ Stars and citations are **refreshed daily** by [a GitHub Action](.github/workflows/refresh.yml) (⭐ via GitHub API; citations via Semantic Scholar). For four-point summaries per paper, open the [interactive reader](https://jingchensun.github.io/Awesome-Multimodal-OPD/).
 
-> 🔄 **Stats last updated: 2026-07-09 06:54 UTC**
+> 🔄 **Stats last updated: 2026-07-10 06:54 UTC**
 
 ## 📊 Overview
 
@@ -43,7 +43,7 @@ On-policy distillation that transfers reasoning into vision-language models and 
 | Learning Visual Spatial Planning from Symbolic State via Modality-Gap-Aware Self-Distillation | [link](https://arxiv.org/abs/2606.06076) | 2026-06-04 | Tsinghua University | — | — | 0 |
 | Decomposed On-Policy Distillation for Vision-Language Reasoning: Steering Gradients for Visual Grounding | [link](https://arxiv.org/abs/2606.00564) | 2026-05-30 | KAIST | — | — | 1 |
 | Visual-Advantage On-Policy Distillation for Vision-Language Models | [link](https://arxiv.org/abs/2605.21924) | 2026-05-21 | Institute of Automation, CAS | — | — | 1 |
-| Vision-OPD: Learning to See Fine Details for Multimodal LLMs via On-Policy Self-Distillation | [link](https://arxiv.org/abs/2605.18740) | 2026-05-18 | ISCAS | [GitHub](https://github.com/VisionOPD/Vision-OPD) | 179 | 6 |
+| Vision-OPD: Learning to See Fine Details for Multimodal LLMs via On-Policy Self-Distillation | [link](https://arxiv.org/abs/2605.18740) | 2026-05-18 | ISCAS | [GitHub](https://github.com/VisionOPD/Vision-OPD) | 180 | 6 |
 | DeltaPrompts: Escaping the Zero-Delta Trap in Multimodal Distillation | [link](https://arxiv.org/abs/2605.15532) | 2026-05-15 | NVIDIA Research | — | — | 0 |
 | Uni-OPD: Unifying On-Policy Distillation with a Dual-Perspective Recipe | [link](https://arxiv.org/abs/2605.03677) | 2026-05-05 | Zhejiang University | [GitHub](https://github.com/WenjinHou/Uni-OPD) | 46 | 13 |
 | Beyond SFT-to-RL: Pre-alignment via Black-Box On-Policy Distillation for Multimodal RL | [link](https://arxiv.org/abs/2604.28123) | 2026-04-30 | HKUST (GZ) | [GitHub](https://github.com/XIAO4579/PRISM) | 92 | 3 |
@@ -61,7 +61,7 @@ OPD / self-distillation for video question answering, video reasoning and tempor
 | World Models Meet Language Models: On the Complementarity of Concrete and Abstract Reasoning | [link](https://arxiv.org/abs/2606.03603) | 2026-06-02 | University of Macau | — | — | 0 |
 | VISD: Enhancing Video Reasoning via Structured Self-Distillation | [link](https://arxiv.org/abs/2605.06094) | 2026-05-07 | HUST | — | — | 6 |
 | Video-OPD: Efficient Post-Training of Multimodal Large Language Models for Temporal Video Grounding via On-Policy Distillation | [link](https://arxiv.org/abs/2602.02994) | 2026-02-03 | Xiaomi | — | — | 11 |
-| 🔎 Thinking With Videos: Multimodal Tool-Augmented Reinforcement Learning for Long Video Reasoning | [link](https://arxiv.org/abs/2508.04416) | 2025-08-06 | Tsinghua University | — | — | 72 |
+| 🔎 Thinking With Videos: Multimodal Tool-Augmented Reinforcement Learning for Long Video Reasoning | [link](https://arxiv.org/abs/2508.04416) | 2025-08-06 | Tsinghua University | — | — | 73 |
 | 🔎 Enhancing Video-LLM Reasoning via Agent-of-Thoughts Distillation | [link](https://arxiv.org/abs/2412.01694) | 2024-12-02 | Shanghai Jiao Tong University | [GitHub](https://github.com/zhengrongz/AoTD) | 58 | 36 |
 
 ## 🔊 Audio QA / Speech
@@ -94,7 +94,7 @@ OPD / self-distillation for diffusion and flow-matching generative models (few-s
 | Flow-OPD: On-Policy Distillation for Flow Matching Models | [link](https://arxiv.org/abs/2605.08063) | 2026-05-08 | USTC | — | — | 5 |
 | D-OPSD: On-Policy Self-Distillation for Continuously Tuning Step-Distilled Diffusion Models | [link](https://arxiv.org/abs/2605.05204) | 2026-05-06 | HKUST | — | — | 5 |
 | LiveTalk: Real-Time Multimodal Interactive Video Diffusion via Improved On-Policy Distillation | [link](https://arxiv.org/abs/2512.23576) | 2025-12-29 | SII / SJTU | — | — | 6 |
-| pi-Flow: Policy-Based Few-Step Generation via Imitation Distillation | [link](https://arxiv.org/abs/2510.14974) | 2025-10-16 | Stanford University | [GitHub](https://github.com/Lakonik/piFlow) | 447 | 21 |
+| pi-Flow: Policy-Based Few-Step Generation via Imitation Distillation | [link](https://arxiv.org/abs/2510.14974) | 2025-10-16 | Stanford University | [GitHub](https://github.com/Lakonik/piFlow) | 446 | 21 |
 | Di$\mathtt{[M]}$O: Distilling Masked Diffusion Models into One-step Generator | [link](https://arxiv.org/abs/2503.15457) | 2025-03-19 | École Polytechnique | — | — | 6 |
 
 ## ⚡ Multimodal Speculative-Decoding Distillation
@@ -119,7 +119,7 @@ The student is a visual agent or VLA policy supervised on its own visual traject
 | LiteGUI: Distilling Compact GUI Agents with Reinforcement Learning | [link](https://arxiv.org/abs/2605.07505) | 2026-05-08 | Moore Threads | — | — | 1 |
 | Learn where to Click from Yourself: On-Policy Self-Distillation for GUI Grounding | [link](https://arxiv.org/abs/2605.00642) | 2026-05-01 | IIE, CAS | — | — | 2 |
 | Co-Evolving Policy Distillation | [link](https://arxiv.org/abs/2604.27083) | 2026-04-29 | IIE, CAS | — | — | 2 |
-| HY-Embodied-0.5: Embodied Foundation Models for Real-World Agents | [link](https://arxiv.org/abs/2604.07430) | 2026-04-08 | Tencent | [GitHub](https://github.com/Tencent-Hunyuan/HY-Embodied) | 757 | 6 |
+| HY-Embodied-0.5: Embodied Foundation Models for Real-World Agents | [link](https://arxiv.org/abs/2604.07430) | 2026-04-08 | Tencent | [GitHub](https://github.com/Tencent-Hunyuan/HY-Embodied) | 758 | 6 |
 | VLA-OPD: Bridging Offline SFT and Online RL for Vision-Language-Action Models via On-Policy Distillation | [link](https://arxiv.org/abs/2603.26666) | 2026-03-27 | HKUST (GZ) | — | — | 5 |
 | Refined Policy Distillation: From VLA Generalists to RL Experts | [link](https://arxiv.org/abs/2503.05833) | 2025-03-06 | Univ. of Tech. Nuremberg | [GitHub](https://github.com/Refined-Policy-Distillation/RPD) | 22 | 21 |
 
