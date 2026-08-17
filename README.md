@@ -9,13 +9,13 @@
 
 <p align="center"><b>👉 <a href="https://jingchensun.github.io/Awesome-Multimodal-OPD/">Live interactive reader</a></b> — searchable, filterable, bilingual (EN / 中文), one click, no install &nbsp;·&nbsp; <a href="https://htmlpreview.github.io/?https://github.com/Jingchensun/Awesome-Multimodal-OPD/blob/main/index.html">instant mirror (no Pages needed)</a></p>
 
-![papers](https://img.shields.io/badge/papers-52-4E6813?style=flat-square) ![web--added](https://img.shields.io/badge/web--added-2-2E86C1?style=flat-square) ![updated](https://img.shields.io/badge/stats_updated-2026.08.16-purple?style=flat-square)
+![papers](https://img.shields.io/badge/papers-52-4E6813?style=flat-square) ![web--added](https://img.shields.io/badge/web--added-2-2E86C1?style=flat-square) ![updated](https://img.shields.io/badge/stats_updated-2026.08.17-purple?style=flat-square)
 
 **What is OPD?** `C1`: the student samples its own trajectories `y ~ π_student(·|x)` during training; `C2`: a teacher provides per-token / sequence-level supervision on those **student-generated** samples. **OPSD** is the special case where the teacher is the *same model* conditioned on privileged information.
 
 Each paper is tagged with **arXiv link · date · first-author affiliation · code · ⭐ stars · citations**. ⭐ Stars and citations are **refreshed daily** by [a GitHub Action](.github/workflows/refresh.yml) (⭐ via GitHub API; citations via Semantic Scholar). For four-point summaries per paper, open the [interactive reader](https://jingchensun.github.io/Awesome-Multimodal-OPD/).
 
-> 🔄 **Stats last updated: 2026-08-16 03:58 UTC**
+> 🔄 **Stats last updated: 2026-08-17 04:02 UTC**
 
 ## 📊 Overview
 
@@ -45,7 +45,7 @@ On-policy distillation that transfers reasoning into vision-language models and 
 | Visual-Advantage On-Policy Distillation for Vision-Language Models | [link](https://arxiv.org/abs/2605.21924) | 2026-05-21 | Institute of Automation, CAS | — | — | 9 |
 | Vision-OPD: Learning to See Fine Details for Multimodal LLMs via On-Policy Self-Distillation | [link](https://arxiv.org/abs/2605.18740) | 2026-05-18 | ISCAS | [GitHub](https://github.com/VisionOPD/Vision-OPD) | 275 | 28 |
 | DeltaPrompts: Escaping the Zero-Delta Trap in Multimodal Distillation | [link](https://arxiv.org/abs/2605.15532) | 2026-05-15 | NVIDIA Research | — | — | 0 |
-| Uni-OPD: Unifying On-Policy Distillation with a Dual-Perspective Recipe | [link](https://arxiv.org/abs/2605.03677) | 2026-05-05 | Zhejiang University | [GitHub](https://github.com/WenjinHou/Uni-OPD) | 55 | 25 |
+| Uni-OPD: Unifying On-Policy Distillation with a Dual-Perspective Recipe | [link](https://arxiv.org/abs/2605.03677) | 2026-05-05 | Zhejiang University | [GitHub](https://github.com/WenjinHou/Uni-OPD) | 56 | 25 |
 | Beyond SFT-to-RL: Pre-alignment via Black-Box On-Policy Distillation for Multimodal RL | [link](https://arxiv.org/abs/2604.28123) | 2026-04-30 | HKUST (GZ) | [GitHub](https://github.com/XIAO4579/PRISM) | 99 | 5 |
 | KEPO: Knowledge-Enhanced Preference Optimization for Multimodal Reasoning with Applications to Medical VQA | [link](https://arxiv.org/abs/2602.00400) | 2026-01-30 | Chapman University | [GitHub](https://github.com/Corleno/KEPO) | 2 | 0 |
 | VOLD: Reasoning Transfer from LLMs to Vision-Language Models via On-Policy Distillation | [link](https://arxiv.org/abs/2510.23497) | 2025-10-27 | University of Tuebingen | — | — | 14 |
@@ -115,7 +115,7 @@ The student is a visual agent or VLA policy supervised on its own visual traject
 | Paper | arXiv | Date | First-author affiliation | Code | ⭐ Stars | Citations |
 | :-- | :--: | :--: | :-- | :--: | :--: | :--: |
 | GeoDrive-Bench: Benchmarking Region-Specific Multimodal Reasoning in Autonomous Driving | [link](https://arxiv.org/abs/2606.02774) | 2026-06-01 | Univ. of Wisconsin-Madison | — | — | 0 |
-| HyperEyes: Dual-Grained Efficiency-Aware Reinforcement Learning for Parallel Multimodal Search Agents | [link](https://arxiv.org/abs/2605.07177) | 2026-05-08 | Xiaohongshu | [GitHub](https://github.com/DeepExperience/HyperEyes) | 72 | 6 |
+| HyperEyes: Dual-Grained Efficiency-Aware Reinforcement Learning for Parallel Multimodal Search Agents | [link](https://arxiv.org/abs/2605.07177) | 2026-05-08 | Xiaohongshu | [GitHub](https://github.com/DeepExperience/HyperEyes) | 73 | 6 |
 | LiteGUI: Distilling Compact GUI Agents with Reinforcement Learning | [link](https://arxiv.org/abs/2605.07505) | 2026-05-08 | Moore Threads | — | — | 2 |
 | Learn where to Click from Yourself: On-Policy Self-Distillation for GUI Grounding | [link](https://arxiv.org/abs/2605.00642) | 2026-05-01 | IIE, CAS | — | — | 7 |
 | Co-Evolving Policy Distillation | [link](https://arxiv.org/abs/2604.27083) | 2026-04-29 | IIE, CAS | — | — | 3 |
