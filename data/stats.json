@@ -1,22 +1,22 @@
 {
  "2510.23497": {
   "stars": null,
-  "citations": 14,
+  "citations": 15,
   "date": "2025-10-27"
  },
  "2605.21924": {
   "stars": null,
-  "citations": 9,
+  "citations": 10,
   "date": "2026-05-21"
  },
  "2605.18740": {
-  "stars": 275,
-  "citations": 28,
+  "stars": 280,
+  "citations": 30,
   "date": "2026-05-18"
  },
  "2606.00564": {
   "stars": null,
-  "citations": 4,
+  "citations": 5,
   "date": "2026-05-30"
  },
  "2602.00400": {
@@ -121,12 +121,12 @@
  },
  "2604.15804": {
   "stars": null,
-  "citations": 96,
+  "citations": 97,
   "date": "2026-04-17"
  },
  "2509.17765": {
   "stars": null,
-  "citations": 414,
+  "citations": 417,
   "date": "2025-09-22"
  },
  "2605.28139": {
@@ -156,12 +156,12 @@
  },
  "2605.15055": {
   "stars": null,
-  "citations": 12,
+  "citations": 13,
   "date": "2026-05-14"
  },
  "2605.05204": {
   "stars": null,
-  "citations": 11,
+  "citations": 12,
   "date": "2026-05-06"
  },
  "2605.09536": {
@@ -186,7 +186,7 @@
  },
  "2605.13724": {
   "stars": null,
-  "citations": 7,
+  "citations": 8,
   "date": "2026-05-13"
  },
  "2512.23576": {
@@ -259,5 +259,5 @@
   "citations": 2,
   "date": "2026-05-08"
  },
- "_updated": "2026-08-17 04:02 UTC"
+ "_updated": "2026-08-18 03:57 UTC"
 }
