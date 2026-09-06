@@ -9,13 +9,13 @@
 
 <p align="center"><b>👉 <a href="https://jingchensun.github.io/Awesome-Multimodal-OPD/">Live interactive reader</a></b> — searchable, filterable, bilingual (EN / 中文), one click, no install &nbsp;·&nbsp; <a href="https://htmlpreview.github.io/?https://github.com/Jingchensun/Awesome-Multimodal-OPD/blob/main/index.html">instant mirror (no Pages needed)</a></p>
 
-![papers](https://img.shields.io/badge/papers-52-4E6813?style=flat-square) ![web--added](https://img.shields.io/badge/web--added-2-2E86C1?style=flat-square) ![updated](https://img.shields.io/badge/stats_updated-2026.09.05-purple?style=flat-square)
+![papers](https://img.shields.io/badge/papers-52-4E6813?style=flat-square) ![web--added](https://img.shields.io/badge/web--added-2-2E86C1?style=flat-square) ![updated](https://img.shields.io/badge/stats_updated-2026.09.06-purple?style=flat-square)
 
 **What is OPD?** `C1`: the student samples its own trajectories `y ~ π_student(·|x)` during training; `C2`: a teacher provides per-token / sequence-level supervision on those **student-generated** samples. **OPSD** is the special case where the teacher is the *same model* conditioned on privileged information.
 
 Each paper is tagged with **arXiv link · date · first-author affiliation · code · ⭐ stars · citations**. ⭐ Stars and citations are **refreshed daily** by [a GitHub Action](.github/workflows/refresh.yml) (⭐ via GitHub API; citations via Semantic Scholar). For four-point summaries per paper, open the [interactive reader](https://jingchensun.github.io/Awesome-Multimodal-OPD/).
 
-> 🔄 **Stats last updated: 2026-09-05 07:40 UTC**
+> 🔄 **Stats last updated: 2026-09-06 07:54 UTC**
 
 ## 📊 Overview
 
@@ -76,7 +76,7 @@ Cross-modal transfer of text reasoning into audio/speech, and OPD for audio unde
 | X-OPD: Cross-Modal On-Policy Distillation for Capability Alignment in Speech LLMs | [link](https://arxiv.org/abs/2603.24596) | 2026-03-06 | Tencent Hunyuan | — | — | 9 |
 | CORD: Bridging the Audio-Text Reasoning Gap via Weighted On-policy Cross-modal Distillation | [link](https://arxiv.org/abs/2601.16547) | 2026-01-23 | Baidu | — | — | 6 |
 | Step-Audio-R1 Technical Report | [link](https://arxiv.org/abs/2511.15848) | 2025-11-19 | StepFun | [GitHub](https://github.com/stepfun-ai/Step-Audio-R1) | 697 | 41 |
-| Qwen3-Omni Technical Report | [link](https://arxiv.org/abs/2509.17765) | 2025-09-22 | Alibaba | — | — | 449 |
+| Qwen3-Omni Technical Report | [link](https://arxiv.org/abs/2509.17765) | 2025-09-22 | Alibaba | — | — | 450 |
 
 ## 🎨 Image / Video Generation (Diffusion · Flow)
 
@@ -119,7 +119,7 @@ The student is a visual agent or VLA policy supervised on its own visual traject
 | LiteGUI: Distilling Compact GUI Agents with Reinforcement Learning | [link](https://arxiv.org/abs/2605.07505) | 2026-05-08 | Moore Threads | — | — | 2 |
 | Learn where to Click from Yourself: On-Policy Self-Distillation for GUI Grounding | [link](https://arxiv.org/abs/2605.00642) | 2026-05-01 | IIE, CAS | — | — | 7 |
 | Co-Evolving Policy Distillation | [link](https://arxiv.org/abs/2604.27083) | 2026-04-29 | IIE, CAS | — | — | 4 |
-| HY-Embodied-0.5: Embodied Foundation Models for Real-World Agents | [link](https://arxiv.org/abs/2604.07430) | 2026-04-08 | Tencent | [GitHub](https://github.com/Tencent-Hunyuan/HY-Embodied) | 866 | 15 |
+| HY-Embodied-0.5: Embodied Foundation Models for Real-World Agents | [link](https://arxiv.org/abs/2604.07430) | 2026-04-08 | Tencent | [GitHub](https://github.com/Tencent-Hunyuan/HY-Embodied) | 867 | 15 |
 | VLA-OPD: Bridging Offline SFT and Online RL for Vision-Language-Action Models via On-Policy Distillation | [link](https://arxiv.org/abs/2603.26666) | 2026-03-27 | HKUST (GZ) | — | — | 7 |
 | Refined Policy Distillation: From VLA Generalists to RL Experts | [link](https://arxiv.org/abs/2503.05833) | 2025-03-06 | Univ. of Tech. Nuremberg | [GitHub](https://github.com/Refined-Policy-Distillation/RPD) | 21 | 23 |
 
