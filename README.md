@@ -9,13 +9,13 @@
 
 <p align="center"><b>👉 <a href="https://jingchensun.github.io/Awesome-Multimodal-OPD/">Live interactive reader</a></b> — searchable, filterable, bilingual (EN / 中文), one click, no install &nbsp;·&nbsp; <a href="https://htmlpreview.github.io/?https://github.com/Jingchensun/Awesome-Multimodal-OPD/blob/main/index.html">instant mirror (no Pages needed)</a></p>
 
-![papers](https://img.shields.io/badge/papers-52-4E6813?style=flat-square) ![web--added](https://img.shields.io/badge/web--added-2-2E86C1?style=flat-square) ![updated](https://img.shields.io/badge/stats_updated-2026.09.14-purple?style=flat-square)
+![papers](https://img.shields.io/badge/papers-52-4E6813?style=flat-square) ![web--added](https://img.shields.io/badge/web--added-2-2E86C1?style=flat-square) ![updated](https://img.shields.io/badge/stats_updated-2026.09.15-purple?style=flat-square)
 
 **What is OPD?** `C1`: the student samples its own trajectories `y ~ π_student(·|x)` during training; `C2`: a teacher provides per-token / sequence-level supervision on those **student-generated** samples. **OPSD** is the special case where the teacher is the *same model* conditioned on privileged information.
 
 Each paper is tagged with **arXiv link · date · first-author affiliation · code · ⭐ stars · citations**. ⭐ Stars and citations are **refreshed daily** by [a GitHub Action](.github/workflows/refresh.yml) (⭐ via GitHub API; citations via Semantic Scholar). For four-point summaries per paper, open the [interactive reader](https://jingchensun.github.io/Awesome-Multimodal-OPD/).
 
-> 🔄 **Stats last updated: 2026-09-14 08:54 UTC**
+> 🔄 **Stats last updated: 2026-09-15 08:40 UTC**
 
 ## 📊 Overview
 
@@ -43,7 +43,7 @@ On-policy distillation that transfers reasoning into vision-language models and 
 | Learning Visual Spatial Planning from Symbolic State via Modality-Gap-Aware Self-Distillation | [link](https://arxiv.org/abs/2606.06076) | 2026-06-04 | Tsinghua University | — | — | 0 |
 | Decomposed On-Policy Distillation for Vision-Language Reasoning: Steering Gradients for Visual Grounding | [link](https://arxiv.org/abs/2606.00564) | 2026-05-30 | KAIST | — | — | 6 |
 | Visual-Advantage On-Policy Distillation for Vision-Language Models | [link](https://arxiv.org/abs/2605.21924) | 2026-05-21 | Institute of Automation, CAS | — | — | 10 |
-| Vision-OPD: Learning to See Fine Details for Multimodal LLMs via On-Policy Self-Distillation | [link](https://arxiv.org/abs/2605.18740) | 2026-05-18 | ISCAS | [GitHub](https://github.com/VisionOPD/Vision-OPD) | 309 | 42 |
+| Vision-OPD: Learning to See Fine Details for Multimodal LLMs via On-Policy Self-Distillation | [link](https://arxiv.org/abs/2605.18740) | 2026-05-18 | ISCAS | [GitHub](https://github.com/VisionOPD/Vision-OPD) | 312 | 42 |
 | DeltaPrompts: Escaping the Zero-Delta Trap in Multimodal Distillation | [link](https://arxiv.org/abs/2605.15532) | 2026-05-15 | NVIDIA Research | — | — | 0 |
 | Uni-OPD: Unifying On-Policy Distillation with a Dual-Perspective Recipe | [link](https://arxiv.org/abs/2605.03677) | 2026-05-05 | Zhejiang University | [GitHub](https://github.com/WenjinHou/Uni-OPD) | 57 | 32 |
 | Beyond SFT-to-RL: Pre-alignment via Black-Box On-Policy Distillation for Multimodal RL | [link](https://arxiv.org/abs/2604.28123) | 2026-04-30 | HKUST (GZ) | [GitHub](https://github.com/XIAO4579/PRISM) | 100 | 7 |
@@ -72,11 +72,11 @@ Cross-modal transfer of text reasoning into audio/speech, and OPD for audio unde
 | :-- | :--: | :--: | :-- | :--: | :--: | :--: |
 | OmniOPSD: Rationale-Privileged On-Policy Self-Distillation for Affective Computing | [link](https://arxiv.org/abs/2606.15920) | 2026-06-14 | Shenzhen University | — | — | 4 |
 | Data-Efficient On-Policy Distillation for Automatic Speech Recognition | [link](https://arxiv.org/abs/2605.28139) | 2026-05-27 | AutoArk-AI | — | — | 1 |
-| Qwen3.5-Omni Technical Report | [link](https://arxiv.org/abs/2604.15804) | 2026-04-17 | Alibaba | — | — | 124 |
+| Qwen3.5-Omni Technical Report | [link](https://arxiv.org/abs/2604.15804) | 2026-04-17 | Alibaba | — | — | 125 |
 | X-OPD: Cross-Modal On-Policy Distillation for Capability Alignment in Speech LLMs | [link](https://arxiv.org/abs/2603.24596) | 2026-03-06 | Tencent Hunyuan | — | — | 10 |
 | CORD: Bridging the Audio-Text Reasoning Gap via Weighted On-policy Cross-modal Distillation | [link](https://arxiv.org/abs/2601.16547) | 2026-01-23 | Baidu | — | — | 6 |
-| Step-Audio-R1 Technical Report | [link](https://arxiv.org/abs/2511.15848) | 2025-11-19 | StepFun | [GitHub](https://github.com/stepfun-ai/Step-Audio-R1) | 697 | 42 |
-| Qwen3-Omni Technical Report | [link](https://arxiv.org/abs/2509.17765) | 2025-09-22 | Alibaba | — | — | 468 |
+| Step-Audio-R1 Technical Report | [link](https://arxiv.org/abs/2511.15848) | 2025-11-19 | StepFun | [GitHub](https://github.com/stepfun-ai/Step-Audio-R1) | 697 | 43 |
+| Qwen3-Omni Technical Report | [link](https://arxiv.org/abs/2509.17765) | 2025-09-22 | Alibaba | — | — | 473 |
 
 ## 🎨 Image / Video Generation (Diffusion · Flow)
 
@@ -85,7 +85,7 @@ OPD / self-distillation for diffusion and flow-matching generative models (few-s
 | Paper | arXiv | Date | First-author affiliation | Code | ⭐ Stars | Citations |
 | :-- | :--: | :--: | :-- | :--: | :--: | :--: |
 | Knowledge Distillation for Visual Autoregressive Models | [link](https://arxiv.org/abs/2606.06078) | 2026-06-04 | Qualcomm AI Research | — | — | 1 |
-| GDSD: Reinforcement Learning as Guided Denoiser Self-Distillation for Diffusion Language Models | [link](https://arxiv.org/abs/2605.29398) | 2026-05-28 | UCL | — | — | 1 |
+| GDSD: Reinforcement Learning as Guided Denoiser Self-Distillation for Diffusion Language Models | [link](https://arxiv.org/abs/2605.29398) | 2026-05-28 | UCL | — | — | 2 |
 | Adversarial Dual On-Policy Distillation from Expressive Teacher | [link](https://arxiv.org/abs/2605.27095) | 2026-05-26 | NTU | — | — | 0 |
 | CollectionLoRA: Collecting 50 Effects in 1 LoRA via Multi-Teacher On-Policy Distillation | [link](https://arxiv.org/abs/2605.25378) | 2026-05-25 | Zhejiang University | — | — | 3 |
 | DiffusionOPD: A Unified Perspective of On-Policy Distillation in Diffusion Models | [link](https://arxiv.org/abs/2605.15055) | 2026-05-14 | Fudan University | — | — | 21 |
