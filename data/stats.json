@@ -11,7 +11,7 @@
  },
  "2605.18740": {
   "stars": 321,
-  "citations": 49,
+  "citations": 50,
   "date": "2026-05-18"
  },
  "2606.00564": {
@@ -91,7 +91,7 @@
  },
  "2606.12195": {
   "stars": null,
-  "citations": 2,
+  "citations": 3,
   "date": "2026-06-10"
  },
  "2606.12072": {
@@ -116,17 +116,17 @@
  },
  "2603.24596": {
   "stars": null,
-  "citations": 12,
+  "citations": 13,
   "date": "2026-03-06"
  },
  "2604.15804": {
   "stars": null,
-  "citations": 137,
+  "citations": 139,
   "date": "2026-04-17"
  },
  "2509.17765": {
   "stars": null,
-  "citations": 502,
+  "citations": 506,
   "date": "2025-09-22"
  },
  "2605.28139": {
@@ -259,5 +259,5 @@
   "citations": 3,
   "date": "2026-05-08"
  },
- "_updated": "2026-09-26 08:35 UTC"
+ "_updated": "2026-09-27 09:15 UTC"
 }
