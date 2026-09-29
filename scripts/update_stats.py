@@ -16,7 +16,7 @@ GitHub Actions. Set CITATION_SOURCE=scholar and install `scholarly` to try GS lo
 
 Run: python scripts/update_stats.py
 """
-import json, os, sys, time, html, urllib.request, urllib.error, datetime
+import json, os, re, sys, time, html, urllib.request, urllib.error, datetime
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 PAPERS = os.path.join(ROOT, "papers.json")
@@ -43,7 +43,12 @@ def fetch_citations_dates(ids, prev):
         req = urllib.request.Request(
             "https://api.semanticscholar.org/graph/v1/paper/batch?fields=citationCount,publicationDate",
             data=body, headers={"Content-Type": "application/json"})
-        data = json.load(urllib.request.urlopen(req, timeout=90))
+        for attempt in range(4):  # the keyless endpoint is often rate-limited (429)
+            try:
+                data = json.load(urllib.request.urlopen(req, timeout=90)); break
+            except urllib.error.HTTPError as e:
+                if e.code != 429 or attempt == 3: raise
+                time.sleep(20 * (attempt + 1))
         for i, d in zip(ids, data):
             cit = (d or {}).get("citationCount")
             pub = (d or {}).get("publicationDate")
@@ -67,8 +72,16 @@ def fetch_stars(repo, prev_val):
         d = json.load(urllib.request.urlopen(req, timeout=30))
         return d.get("stargazers_count", prev_val)
     except Exception as e:
-        log(f"stars fetch failed for {repo}: {e} -> keeping previous")
-        return prev_val
+        log(f"stars API failed for {repo}: {e} -> trying repo page")
+    # fallback: read the counter from the repo page (no API rate limit; handy for local runs)
+    try:
+        req = urllib.request.Request("https://github.com/" + repo, headers={"User-Agent": "Mozilla/5.0"})
+        page = urllib.request.urlopen(req, timeout=30).read().decode("utf-8", "ignore")
+        m = re.search(r'id="repo-stars-counter-star"[^>]*title="([\d,]+)"', page)
+        if m: return int(m.group(1).replace(",", ""))
+    except Exception as e:
+        log(f"stars page failed for {repo}: {e} -> keeping previous")
+    return prev_val
 
 def date_from_id(i):
     return f"20{i[:2]}-{i[2:4]}"
@@ -80,6 +93,14 @@ def human(n):
     return str(n)
 
 def arxiv_url(i): return f"https://arxiv.org/abs/{i}"
+
+def rank_key(stats):
+    """Sort key: GitHub stars (high -> low), then citations, then date. Paper-only entries go last."""
+    def key(p):
+        s = stats.get(p["id"], {})
+        stars = s.get("stars") if p.get("repo") else None
+        return (-1 if stars is None else stars, s.get("citations") or 0, s.get("date") or "")
+    return key
 
 # ---------------- main refresh ----------------
 def refresh():
@@ -96,7 +117,7 @@ def refresh():
         stars = fetch_stars(repo, prev.get(i, {}).get("stars")) if repo else None
         stats[i] = {"stars": stars,
                     "citations": cd[i]["citations"],
-                    "date": cd[i]["date"]}
+                    "date": p.get("date") or cd[i]["date"]}  # arXiv date in papers.json wins
         time.sleep(0.05)
     stats["_updated"] = datetime.datetime.utcnow().strftime("%Y-%m-%d %H:%M UTC")
     os.makedirs(os.path.dirname(STATS), exist_ok=True)
@@ -105,90 +126,110 @@ def refresh():
     return src, stats
 
 # ---------------- README ----------------
+TOP_N = 10  # size of the cross-domain "most starred" table
+
 def build_readme(src, stats):
     cats = src["categories"]; papers = src["papers"]
     by = {c["key"]: [] for c in cats}
     for p in papers: by[p["category"]].append(p)
-    for k in by: by[k].sort(key=lambda p: (stats.get(p["id"], {}).get("date") or "", stats.get(p["id"], {}).get("citations") or 0), reverse=True)  # newest first
+    for k in by: by[k].sort(key=rank_key(stats), reverse=True)  # most-starred first
     total = len(papers)
-    nweb = sum(1 for p in papers if p["id"] in WEB_IDS)
+    ncode = sum(1 for p in papers if p.get("repo"))
     updated = stats.get("_updated", "")
     preview = f"https://htmlpreview.github.io/?https://github.com/{REPO}/blob/main/index.html"
     pages = f"https://{REPO.split('/')[0].lower()}.github.io/{REPO.split('/')[1]}/"
+    short = {c["key"]: c.get("short") or c["title"] for c in cats}
+
+    def cell(x): return (x or "—").replace("|", "/")
+    def paper_cell(p):
+        web = " 🔎" if p["id"] in WEB_IDS else ""
+        return f"[{cell(p['title'])}]({arxiv_url(p['id'])}){web}"
+    def code_cell(p):
+        s = stats.get(p["id"], {})
+        return f"[⭐ {human(s.get('stars'))}](https://github.com/{p['repo']})"
+    def cites(p):
+        c = stats.get(p["id"], {}).get("citations")
+        return str(c) if c is not None else "—"
+    def date(p): return stats.get(p["id"], {}).get("date") or "—"
 
     L = []; w = L.append
-    w("# 🖼️ Awesome Multimodal On-Policy Distillation")
+    w('<h1 align="center">Awesome Multimodal On-Policy Distillation</h1>')
     w("")
-    w("> A curated, **auto-refreshed** list of **multimodal On-Policy Distillation (OPD / OPSD)** papers — "
-      "organized by **Image QA · Video QA · Audio QA** (plus generation, speculative decoding, and embodied/VLA).")
+    w('<p align="center">Multimodal <b>OPD / OPSD</b> papers across image, video, audio, generation and embodied AI —<br>'
+      'ranked by GitHub stars, refreshed every day.</p>')
     w("")
-    # ---- prominent interactive-reader banner ----
     w('<p align="center">')
-    w(f'  <a href="{pages}"><img src="https://img.shields.io/badge/%F0%9F%9A%80%20OPEN%20INTERACTIVE%20READER-Search%20%C2%B7%20Filter%20%C2%B7%20EN%2F%E4%B8%AD%E6%96%87-1f6feb?style=for-the-badge&logoColor=white" alt="Open Interactive Reader"></a>')
-    w(f'  <a href="{preview}"><img src="https://img.shields.io/badge/mirror-htmlpreview-555?style=for-the-badge" alt="htmlpreview mirror"></a>')
+    w(f'  <a href="{pages}"><img src="https://img.shields.io/badge/Interactive_reader-EN_%2F_%E4%B8%AD%E6%96%87-1f6feb?style=flat-square" alt="Interactive reader"></a>')
+    w(f'  <img src="https://img.shields.io/badge/papers-{total}-4E6813?style=flat-square" alt="papers">')
+    w(f'  <img src="https://img.shields.io/badge/with_code-{ncode}-2E86C1?style=flat-square" alt="with code">')
+    w(f'  <img src="https://img.shields.io/badge/updated-{updated.split(" ")[0].replace("-", ".")}-purple?style=flat-square" alt="updated">')
     w('</p>')
     w("")
-    w(f'<p align="center"><b>👉 <a href="{pages}">Live interactive reader</a></b> — searchable, filterable, '
-      f'bilingual (EN / 中文), one click, no install &nbsp;·&nbsp; '
-      f'<a href="{preview}">instant mirror (no Pages needed)</a></p>')
+    w('<p align="center">')
+    w("  " + " · ".join(f'<a href="#{c["key"]}">{short[c["key"]]} ({len(by[c["key"]])})</a>' for c in cats))
+    w('</p>')
     w("")
-    w(f"![papers](https://img.shields.io/badge/papers-{total}-4E6813?style=flat-square) "
-      f"![web--added](https://img.shields.io/badge/web--added-{nweb}-2E86C1?style=flat-square) "
-      f"![updated](https://img.shields.io/badge/stats_updated-{updated.split(' ')[0].replace('-', '.')}-purple?style=flat-square)")
+    w("> **On-policy distillation (OPD)** — the student learns from *its own* rollouts `y ~ π_student(·|x)`, "
+      "while a teacher scores or corrects those student-generated samples. "
+      "**OPSD** is the self-distillation case: the teacher is the same model, given privileged information.")
     w("")
-    w("**What is OPD?** `C1`: the student samples its own trajectories `y ~ π_student(·|x)` during training; "
-      "`C2`: a teacher provides per-token / sequence-level supervision on those **student-generated** samples. "
-      "**OPSD** is the special case where the teacher is the *same model* conditioned on privileged information.")
+    w(f"Search, filter and read a four-point summary of every paper in the **[interactive reader]({pages})** "
+      f"([mirror]({preview})).")
     w("")
-    w("Each paper is tagged with **arXiv link · date · first-author affiliation · code · ⭐ stars · citations**. "
-      "⭐ Stars and citations are **refreshed daily** by [a GitHub Action](.github/workflows/refresh.yml) "
-      "(⭐ via GitHub API; citations via Semantic Scholar). For four-point summaries per paper, open the "
-      f"[interactive reader]({pages}).")
-    w("")
-    w(f"> 🔄 **Stats last updated: {updated}**")
-    w("")
-    w("## 📊 Overview")
-    w("")
-    w("| Subfield | # |")
-    w("| :-- | :--: |")
-    for c in cats: w(f"| {c['title']} | {len(by[c['key']])} |")
-    w(f"| **Total** | **{total}** |")
-    w("")
+    top = sorted([p for p in papers if p.get("repo") and stats.get(p["id"], {}).get("stars") is not None],
+                 key=rank_key(stats), reverse=True)[:TOP_N]
+    if top:
+        w("## 🔥 Most starred")
+        w("")
+        w("| # | Paper | Domain | Affiliation | Code |")
+        w("| :-: | :-- | :-- | :-- | :-: |")
+        for n, p in enumerate(top, 1):
+            w(f"| {n} | {paper_cell(p)} | {short[p['category']]} | {cell(p.get('affiliation'))} | {code_cell(p)} |")
+        w("")
     for c in cats:
-        w(f"## {c['title']}")
+        ps = by[c["key"]]
+        coded = [p for p in ps if p.get("repo")]
+        plain = sorted([p for p in ps if not p.get("repo")], key=lambda p: (date(p), p["id"]), reverse=True)
+        w(f'<h2 id="{c["key"]}">{c["title"]}</h2>')
         w("")
-        w(c["desc"])
+        w(f"{c['desc']} **{len(ps)} papers**, {len(coded)} with code.")
         w("")
-        w("| Paper | arXiv | Date | First-author affiliation | Code | ⭐ Stars | Citations |")
-        w("| :-- | :--: | :--: | :-- | :--: | :--: | :--: |")
-        for p in by[c["key"]]:
-            s = stats.get(p["id"], {})
-            web = "🔎 " if p["id"] in WEB_IDS else ""
-            ttl = p["title"].replace("|", "/")
-            repo = p.get("repo")
-            code = f"[GitHub](https://github.com/{repo})" if repo else "—"
-            stars = human(s.get("stars")) if repo else "—"
-            cit = s.get("citations"); cit = str(cit) if cit is not None else "—"
-            aff = (p.get("affiliation") or "—").replace("|", "/")
-            w(f"| {web}{ttl} | [link]({arxiv_url(p['id'])}) | {s.get('date','—')} | {aff} | {code} | {stars} | {cit} |")
-        w("")
-    w("## 🙏 Acknowledgments")
+        if coded:
+            w("| Paper | Affiliation | Date | Code | Cited |")
+            w("| :-- | :-- | :-: | :-: | :-: |")
+            for p in coded:
+                w(f"| {paper_cell(p)} | {cell(p.get('affiliation'))} | {date(p)} | {code_cell(p)} | {cites(p)} |")
+            w("")
+        if plain:
+            w("<details>")
+            w(f"<summary>📄 {len(plain)} more without public code (newest first)</summary>")
+            w("")
+            w("| Paper | Affiliation | Date | Cited |")
+            w("| :-- | :-- | :-: | :-: |")
+            for p in plain:
+                w(f"| {paper_cell(p)} | {cell(p.get('affiliation'))} | {date(p)} | {cites(p)} |")
+            w("")
+            w("</details>")
+            w("")
+    w("## Contributing")
     w("")
-    w("This list is compiled and de-duplicated from three awesome repositories, plus web search for a few "
-      "multimodal entries missing from them. Full credit to the maintainers of:")
+    w("Add an entry to [`papers.json`](papers.json) and open a PR. `README.md` and `index.html` are generated by "
+      "[`scripts/update_stats.py`](scripts/update_stats.py), so please do not edit them by hand. "
+      "Stars come from the GitHub API and citations from Semantic Scholar, refreshed daily by "
+      "[a GitHub Action](.github/workflows/refresh.yml)"
+      + (f" (last run: {updated})." if updated else "."))
     w("")
-    w("- [thinkwee/AwesomeOPD](https://github.com/thinkwee/AwesomeOPD)")
-    w("- [chrisliu298/awesome-on-policy-distillation](https://github.com/chrisliu298/awesome-on-policy-distillation)")
-    w("- [nick7nlp/Awesome-LLM-On-Policy-Distillation](https://github.com/nick7nlp/Awesome-LLM-On-Policy-Distillation)")
+    w("## Acknowledgments")
     w("")
-    w("Summaries are paraphrased from the papers' arXiv abstracts and may contain errors — please refer to the "
-      "original papers. To add a paper, edit [`papers.json`](papers.json); the tables and the interactive reader "
-      "regenerate automatically. ⭐ stars and citations are snapshots that change over time.")
+    w("Seeded from [thinkwee/AwesomeOPD](https://github.com/thinkwee/AwesomeOPD), "
+      "[chrisliu298/awesome-on-policy-distillation](https://github.com/chrisliu298/awesome-on-policy-distillation) and "
+      "[nick7nlp/Awesome-LLM-On-Policy-Distillation](https://github.com/nick7nlp/Awesome-LLM-On-Policy-Distillation), "
+      "then extended with arXiv search (🔎 marks entries found by web search). "
+      "Summaries are paraphrased from abstracts and may contain errors — the papers are the reference.")
     w("")
-    w("## 📄 License")
+    w("## License")
     w("")
-    w("[![CC0](https://licensebuttons.net/p/zero/1.0/88x31.png)](https://creativecommons.org/publicdomain/zero/1.0/) "
-      "Released under CC0 (public-domain dedication).")
+    w("[CC0 1.0](https://creativecommons.org/publicdomain/zero/1.0/) — public-domain dedication.")
     w("")
     with open(README, "w", encoding="utf-8") as f: f.write("\n".join(L))
     log("wrote README.md")
@@ -197,7 +238,7 @@ def build_html(src, stats):
     cats = src["categories"]; papers = src["papers"]
     by = {c["key"]: [] for c in cats}
     for p in papers: by[p["category"]].append(p)
-    for k in by: by[k].sort(key=lambda p: (stats.get(p["id"], {}).get("date") or "", stats.get(p["id"], {}).get("citations") or 0), reverse=True)  # newest first
+    for k in by: by[k].sort(key=rank_key(stats), reverse=True)  # most-starred first
     updated = stats.get("_updated", "")
     total = len(papers)
 
@@ -241,8 +282,8 @@ def build_html(src, stats):
                     f'<span class="count">{len(by[c["key"]])}</span></h2>'
                     f'<p class="sec-desc">{t(c["desc"], c["desc_zh"])}</p></div><div class="grid">{cards}</div></section>')
 
-    head_sub = t(f"{total} multimodal OPD/OPSD papers · Image QA · Video QA · Audio QA · generation · speculative decoding · embodied/VLA. Each summarized by four questions, with arXiv date, GitHub stars and citations.",
-                 f"{total} 篇多模态 OPD/OPSD 论文 · 图像/视频/语音问答 · 生成 · 投机解码 · 具身/VLA。每篇四问速览，含 arXiv 日期、GitHub Star 与被引数。")
+    head_sub = t(f"{total} multimodal OPD/OPSD papers · image · video · audio · generation · embodied/VLA/world model, ranked by GitHub stars. Each summarized by four questions, with arXiv date, stars and citations.",
+                 f"{total} 篇多模态 OPD/OPSD 论文 · 图像 · 视频 · 音频 · 生成 · 具身/VLA/世界模型，按 GitHub Star 排序。每篇四问速览，含 arXiv 日期、Star 与被引数。")
     upd = t(f"Stats last updated: {updated} · stars via GitHub API · citations via Semantic Scholar",
             f"数据更新于：{updated} · Star 来自 GitHub API · 被引来自 Semantic Scholar")
     doc = f"""<!DOCTYPE html><html lang="en"><head><meta charset="utf-8">
@@ -283,7 +324,7 @@ footer{{color:var(--mut);font-size:12.5px;text-align:center;padding:30px 18px;bo
 @media(max-width:700px){{.grid{{grid-template-columns:1fr}}}}
 </style></head><body>
 <header><div class="wrap" style="padding-bottom:0">
-<h1>🖼️ Awesome Multimodal On-Policy Distillation</h1>
+<h1>Awesome Multimodal On-Policy Distillation</h1>
 <p>{head_sub}</p>
 <p style="font-size:12.5px">🔄 {upd} · <a href="https://github.com/{REPO}" target="_blank">{t("source repo","源仓库")}</a></p>
 </div></header>
