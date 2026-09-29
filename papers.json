@@ -49,7 +49,7 @@
   {
    "id": "2510.23497",
    "category": "imageqa",
-   "sub": "ICLR 2026 · 旗舰 VLM",
+   "sub": "",
    "title": "VOLD: Reasoning Transfer from LLMs to Vision-Language Models via On-Policy Distillation",
    "venue": "ICLR 2026",
    "repo": null,
@@ -69,7 +69,7 @@
   {
    "id": "2605.21924",
    "category": "imageqa",
-   "sub": "arXiv 2026",
+   "sub": "",
    "title": "Visual-Advantage On-Policy Distillation for Vision-Language Models",
    "venue": "arXiv 2026",
    "repo": null,
@@ -89,7 +89,7 @@
   {
    "id": "2605.18740",
    "category": "imageqa",
-   "sub": "arXiv 2026",
+   "sub": "",
    "title": "Vision-OPD: Learning to See Fine Details for Multimodal LLMs via On-Policy Self-Distillation",
    "venue": "arXiv 2026",
    "repo": "VisionOPD/Vision-OPD",
@@ -109,7 +109,7 @@
   {
    "id": "2606.00564",
    "category": "imageqa",
-   "sub": "arXiv 2026",
+   "sub": "",
    "title": "Decomposed On-Policy Distillation for Vision-Language Reasoning: Steering Gradients for Visual Grounding",
    "venue": "arXiv 2026",
    "repo": "hee-suk-yoon/Decomposed_OPD",
@@ -129,7 +129,7 @@
   {
    "id": "2602.00400",
    "category": "imageqa",
-   "sub": "KEPO",
+   "sub": "",
    "title": "KEPO: Knowledge-Enhanced Preference Optimization for Multimodal Reasoning with Applications to Medical VQA",
    "venue": "arXiv 2026",
    "repo": "Corleno/KEPO",
@@ -149,7 +149,7 @@
   {
    "id": "2606.05718",
    "category": "imageqa",
-   "sub": "arXiv 2026",
+   "sub": "",
    "title": "ViCuR: Visual Cues as Recoverable Privilege for Multimodal On-Policy Distillation",
    "venue": "arXiv 2026",
    "repo": "tiankanghui/ViCuR",
@@ -169,7 +169,7 @@
   {
    "id": "2605.15532",
    "category": "imageqa",
-   "sub": "arXiv 2026",
+   "sub": "",
    "title": "DeltaPrompts: Escaping the Zero-Delta Trap in Multimodal Distillation",
    "venue": "arXiv 2026",
    "repo": null,
@@ -189,7 +189,7 @@
   {
    "id": "2606.09091",
    "category": "imageqa",
-   "sub": "arXiv 2026",
+   "sub": "",
    "title": "Stabilizing On-Policy Distillation for MLLM Reasoning with Global Normalization",
    "venue": "arXiv 2026",
    "repo": "OPPO-Mente-Lab/GNDPO",
@@ -209,7 +209,7 @@
   {
    "id": "2606.10334",
    "category": "imageqa",
-   "sub": "arXiv 2026",
+   "sub": "",
    "title": "Self-Distillation Policy Optimization via Visual Feedback: Bridging Code and Visual Artifacts",
    "venue": "arXiv 2026",
    "repo": null,
@@ -229,7 +229,7 @@
   {
    "id": "2606.07000",
    "category": "imageqa",
-   "sub": "arXiv 2026",
+   "sub": "",
    "title": "Teaching the Way, Not the Answer: Privileged Tutoring Distillation for Multimodal Policy Optimization",
    "venue": "arXiv 2026",
    "repo": "XszNeverSleep/PTD-PO",
@@ -249,7 +249,7 @@
   {
    "id": "2604.28123",
    "category": "imageqa",
-   "sub": "arXiv 2026",
+   "sub": "",
    "title": "Beyond SFT-to-RL: Pre-alignment via Black-Box On-Policy Distillation for Multimodal RL",
    "venue": "arXiv 2026",
    "repo": "XIAO4579/PRISM",
@@ -269,7 +269,7 @@
   {
    "id": "2606.08719",
    "category": "imageqa",
-   "sub": "arXiv 2026",
+   "sub": "",
    "title": "Thinking Without Images: Internalizing Visual Manipulation with On-Policy Self-Distillation",
    "venue": "arXiv 2026",
    "repo": "walkeralan123/Imagine-OPD",
@@ -289,7 +289,7 @@
   {
    "id": "2606.06076",
    "category": "imageqa",
-   "sub": "arXiv 2026",
+   "sub": "",
    "title": "Learning Visual Spatial Planning from Symbolic State via Modality-Gap-Aware Self-Distillation",
    "venue": "arXiv 2026",
    "repo": "Oranger-l/MGSD",
@@ -309,7 +309,7 @@
   {
    "id": "2605.03677",
    "category": "imageqa",
-   "sub": "统一配方",
+   "sub": "",
    "title": "Uni-OPD: Unifying On-Policy Distillation with a Dual-Perspective Recipe",
    "venue": "arXiv 2026",
    "repo": "WenjinHou/Uni-OPD",
@@ -329,7 +329,7 @@
   {
    "id": "2602.02994",
    "category": "videoqa",
-   "sub": "视频定位",
+   "sub": "",
    "title": "Video-OPD: Efficient Post-Training of Multimodal Large Language Models for Temporal Video Grounding via On-Policy Distillation",
    "venue": "arXiv 2026",
    "repo": null,
@@ -349,7 +349,7 @@
   {
    "id": "2605.06094",
    "category": "videoqa",
-   "sub": "arXiv 2026",
+   "sub": "",
    "title": "VISD: Enhancing Video Reasoning via Structured Self-Distillation",
    "venue": "arXiv 2026",
    "repo": "Koreyoshi01/VISD",
@@ -369,7 +369,7 @@
   {
    "id": "2412.01694",
    "category": "videoqa",
-   "sub": "AoTD",
+   "sub": "",
    "title": "Enhancing Video-LLM Reasoning via Agent-of-Thoughts Distillation",
    "venue": "CVPR 2025",
    "repo": "zhengrongz/AoTD",
@@ -389,7 +389,7 @@
   {
    "id": "2508.04416",
    "category": "videoqa",
-   "sub": "VITAL",
+   "sub": "",
    "title": "Thinking With Videos: Multimodal Tool-Augmented Reinforcement Learning for Long Video Reasoning",
    "venue": "arXiv 2025.08",
    "repo": null,
@@ -409,7 +409,7 @@
   {
    "id": "2606.12195",
    "category": "videoqa",
-   "sub": "arXiv 2026",
+   "sub": "",
    "title": "InternVideo3: Agentify Foundation Models with Multimodal Contextual Reasoning",
    "venue": "arXiv 2026",
    "repo": null,
@@ -429,7 +429,7 @@
   {
    "id": "2606.12072",
    "category": "videoqa",
-   "sub": "arXiv 2026",
+   "sub": "",
    "title": "World Model Self-Distillation: Training World Models to Solve General Tasks",
    "venue": "arXiv 2026",
    "repo": "sebastian-stapf/world-model-self-distillation",
@@ -449,7 +449,7 @@
   {
    "id": "2606.03603",
    "category": "videoqa",
-   "sub": "arXiv 2026",
+   "sub": "",
    "title": "World Models Meet Language Models: On the Complementarity of Concrete and Abstract Reasoning",
    "venue": "arXiv 2026",
    "repo": "yczhou001/PF-OPSD",
@@ -469,7 +469,7 @@
   {
    "id": "2511.15848",
    "category": "audioqa",
-   "sub": "音频推理",
+   "sub": "",
    "title": "Step-Audio-R1 Technical Report",
    "venue": "arXiv 2025",
    "repo": "stepfun-ai/Step-Audio-R1",
@@ -489,7 +489,7 @@
   {
    "id": "2601.16547",
    "category": "audioqa",
-   "sub": "百度 Ernie",
+   "sub": "",
    "title": "CORD: Bridging the Audio-Text Reasoning Gap via Weighted On-policy Cross-modal Distillation",
    "venue": "arXiv 2026",
    "repo": null,
@@ -509,7 +509,7 @@
   {
    "id": "2603.24596",
    "category": "audioqa",
-   "sub": "语音 LLM",
+   "sub": "",
    "title": "X-OPD: Cross-Modal On-Policy Distillation for Capability Alignment in Speech LLMs",
    "venue": "arXiv 2026",
    "repo": null,
@@ -529,7 +529,7 @@
   {
    "id": "2604.15804",
    "category": "audioqa",
-   "sub": "Alibaba · 跨模态",
+   "sub": "",
    "title": "Qwen3.5-Omni Technical Report",
    "venue": "arXiv 2026",
    "repo": null,
@@ -549,7 +549,7 @@
   {
    "id": "2509.17765",
    "category": "audioqa",
-   "sub": "arXiv.org",
+   "sub": "",
    "title": "Qwen3-Omni Technical Report",
    "venue": "arXiv 2025",
    "repo": "QwenLM/Qwen3-Omni",
@@ -569,7 +569,7 @@
   {
    "id": "2605.28139",
    "category": "audioqa",
-   "sub": "arXiv 2026",
+   "sub": "",
    "title": "Data-Efficient On-Policy Distillation for Automatic Speech Recognition",
    "venue": "arXiv 2026",
    "repo": null,
@@ -589,7 +589,7 @@
   {
    "id": "2606.15920",
    "category": "audioqa",
-   "sub": "arXiv 2026",
+   "sub": "",
    "title": "OmniOPSD: Rationale-Privileged On-Policy Self-Distillation for Affective Computing",
    "venue": "arXiv 2026",
    "repo": null,
@@ -609,7 +609,7 @@
   {
    "id": "2510.14974",
    "category": "generation",
-   "sub": "ICLR 2026 · 扩散",
+   "sub": "",
    "title": "pi-Flow: Policy-Based Few-Step Generation via Imitation Distillation",
    "venue": "ICLR 2026",
    "repo": "Lakonik/piFlow",
@@ -629,7 +629,7 @@
   {
    "id": "2503.15457",
    "category": "generation",
-   "sub": "arXiv 2025",
+   "sub": "",
    "title": "Di$\\mathtt{[M]}$O: Distilling Masked Diffusion Models into One-step Generator",
    "venue": "arXiv 2025",
    "repo": null,
@@ -649,7 +649,7 @@
   {
    "id": "2605.08063",
    "category": "generation",
-   "sub": "arXiv 2026",
+   "sub": "",
    "title": "Flow-OPD: On-Policy Distillation for Flow Matching Models",
    "venue": "arXiv 2026",
    "repo": "CostaliyA/Flow-OPD",
@@ -669,7 +669,7 @@
   {
    "id": "2605.15055",
    "category": "generation",
-   "sub": "arXiv 2026",
+   "sub": "",
    "title": "DiffusionOPD: A Unified Perspective of On-Policy Distillation in Diffusion Models",
    "venue": "arXiv 2026",
    "repo": null,
@@ -689,7 +689,7 @@
   {
    "id": "2605.05204",
    "category": "generation",
-   "sub": "arXiv 2026",
+   "sub": "",
    "title": "D-OPSD: On-Policy Self-Distillation for Continuously Tuning Step-Distilled Diffusion Models",
    "venue": "arXiv 2026",
    "repo": null,
@@ -709,7 +709,7 @@
   {
    "id": "2605.09536",
    "category": "generation",
-   "sub": "arXiv 2026",
+   "sub": "",
    "title": "TAD: Temporal-Aware Trajectory Self-Distillation for Fast and Accurate Diffusion LLM",
    "venue": "arXiv 2026",
    "repo": "BHmingyang/TAD",
@@ -729,7 +729,7 @@
   {
    "id": "2605.29398",
    "category": "generation",
-   "sub": "arXiv 2026",
+   "sub": "",
    "title": "GDSD: Reinforcement Learning as Guided Denoiser Self-Distillation for Diffusion Language Models",
    "venue": "arXiv 2026",
    "repo": "GaryBall/GDSD",
@@ -749,7 +749,7 @@
   {
    "id": "2605.25378",
    "category": "generation",
-   "sub": "CollectionLoRA",
+   "sub": "",
    "title": "CollectionLoRA: Collecting 50 Effects in 1 LoRA via Multi-Teacher On-Policy Distillation",
    "venue": "ECCV 2026",
    "repo": "Qwen-Applications/CollectionLoRA",
@@ -769,7 +769,7 @@
   {
    "id": "2605.27095",
    "category": "generation",
-   "sub": "arXiv 2026",
+   "sub": "",
    "title": "Adversarial Dual On-Policy Distillation from Expressive Teacher",
    "venue": "ICML 2026",
    "repo": "vanzll/FA-OPD",
@@ -789,7 +789,7 @@
   {
    "id": "2605.13724",
    "category": "generation",
-   "sub": "arXiv 2026",
+   "sub": "",
    "title": "AnyFlow: Any-Step Video Diffusion Model with On-Policy Flow Map Distillation",
    "venue": "arXiv 2026",
    "repo": "NVlabs/AnyFlow",
@@ -809,7 +809,7 @@
   {
    "id": "2512.23576",
    "category": "generation",
-   "sub": "arXiv.org",
+   "sub": "",
    "title": "LiveTalk: Real-Time Multimodal Interactive Video Diffusion via Improved On-Policy Distillation",
    "venue": "arXiv 2025",
    "repo": "GAIR-NLP/LiveTalk",
@@ -829,7 +829,7 @@
   {
    "id": "2606.06078",
    "category": "generation",
-   "sub": "arXiv 2026",
+   "sub": "",
    "title": "Knowledge Distillation for Visual Autoregressive Models",
    "venue": "arXiv 2026",
    "repo": null,
@@ -929,7 +929,7 @@
   {
    "id": "2603.26666",
    "category": "embodied",
-   "sub": "HKUST · 桥接 SFT/RL",
+   "sub": "",
    "title": "VLA-OPD: Bridging Offline SFT and Online RL for Vision-Language-Action Models via On-Policy Distillation",
    "venue": "arXiv 2026",
    "repo": null,
@@ -949,7 +949,7 @@
   {
    "id": "2604.07430",
    "category": "embodied",
-   "sub": "Tencent · 具身",
+   "sub": "",
    "title": "HY-Embodied-0.5: Embodied Foundation Models for Real-World Agents",
    "venue": "arXiv 2026",
    "repo": "Tencent-Hunyuan/HY-Embodied",
@@ -989,7 +989,7 @@
   {
    "id": "2605.07177",
    "category": "embodied",
-   "sub": "双粒度效率",
+   "sub": "",
    "title": "HyperEyes: Dual-Grained Efficiency-Aware Reinforcement Learning for Parallel Multimodal Search Agents",
    "venue": "arXiv 2026",
    "repo": "DeepExperience/HyperEyes",
@@ -1009,7 +1009,7 @@
   {
    "id": "2604.27083",
    "category": "embodied",
-   "sub": "CoPD",
+   "sub": "",
    "title": "Co-Evolving Policy Distillation",
    "venue": "arXiv 2026",
    "repo": null,
@@ -1029,7 +1029,7 @@
   {
    "id": "2606.02774",
    "category": "embodied",
-   "sub": "arXiv 2026",
+   "sub": "",
    "title": "GeoDrive-Bench: Benchmarking Region-Specific Multimodal Reasoning in Autonomous Driving",
    "venue": "arXiv 2026",
    "repo": "gray311/CulturalDrive-Bench",
@@ -1049,7 +1049,7 @@
   {
    "id": "2605.00642",
    "category": "embodied",
-   "sub": "arXiv 2026",
+   "sub": "",
    "title": "Learn where to Click from Yourself: On-Policy Self-Distillation for GUI Grounding",
    "venue": "arXiv 2026",
    "repo": null,
@@ -1069,7 +1069,7 @@
   {
    "id": "2605.07505",
    "category": "embodied",
-   "sub": "arXiv 2026",
+   "sub": "",
    "title": "LiteGUI: Distilling Compact GUI Agents with Reinforcement Learning",
    "venue": "arXiv 2026",
    "repo": null,
