@@ -6,7 +6,7 @@
   <a href="https://jingchensun.github.io/Awesome-Multimodal-OPD/"><img src="https://img.shields.io/badge/Interactive_reader-EN_%2F_%E4%B8%AD%E6%96%87-1f6feb?style=flat-square" alt="Interactive reader"></a>
   <img src="https://img.shields.io/badge/papers-158-4E6813?style=flat-square" alt="papers">
   <img src="https://img.shields.io/badge/with_code-61-2E86C1?style=flat-square" alt="with code">
-  <img src="https://img.shields.io/badge/updated-2026.10.19-purple?style=flat-square" alt="updated">
+  <img src="https://img.shields.io/badge/updated-2026.10.20-purple?style=flat-square" alt="updated">
 </p>
 
 <p align="center">
@@ -24,7 +24,7 @@ Search, filter and read a four-point summary of every paper in the **[interactiv
 | 1 | [SenseNova-U1.5: Towards Native Unified Visual Intelligence](https://arxiv.org/abs/2609.11929) | Generation | SenseTime | [⭐ 6.9k](https://github.com/OpenSenseNova/SenseNova-U1) |
 | 2 | [Qwen3-Omni Technical Report](https://arxiv.org/abs/2509.17765) | Audio | Alibaba | [⭐ 4.1k](https://github.com/QwenLM/Qwen3-Omni) |
 | 3 | [HY-Embodied-0.5: Embodied Foundation Models for Real-World Agents](https://arxiv.org/abs/2604.07430) | Embodied | Tencent | [⭐ 876](https://github.com/Tencent-Hunyuan/HY-Embodied) |
-| 4 | [On-Policy Self-Distillation in Diffusion Models](https://arxiv.org/abs/2608.24646) | Generation | ByteDance | [⭐ 858](https://github.com/worldbench/DiffusionOPSD) |
+| 4 | [On-Policy Self-Distillation in Diffusion Models](https://arxiv.org/abs/2608.24646) | Generation | ByteDance | [⭐ 863](https://github.com/worldbench/DiffusionOPSD) |
 | 5 | [Causal-rCM: A Unified Teacher-Forcing and Self-Forcing Open Recipe for Autoregressive Diffusion Distillation in Streaming Video Generation and Interactive World Models](https://arxiv.org/abs/2606.25473) | Generation | Tsinghua University | [⭐ 823](https://github.com/NVlabs/rcm) |
 | 6 | [Kwai Keye-VL-2.0 Technical Report](https://arxiv.org/abs/2606.10651) | Video | Kuaishou | [⭐ 814](https://github.com/Kwai-Keye/Keye) |
 | 7 | [Step-Audio-R1 Technical Report](https://arxiv.org/abs/2511.15848) | Audio | StepFun | [⭐ 703](https://github.com/stepfun-ai/Step-Audio-R1) |
@@ -38,11 +38,11 @@ Vision-language reasoning, VQA, fine-grained perception, OCR, medical and indust
 
 | Paper | Affiliation | Date | Code | Cited |
 | :-- | :-- | :-: | :-: | :-: |
-| [Vision-OPD: Learning to See Fine Details for Multimodal LLMs via On-Policy Self-Distillation](https://arxiv.org/abs/2605.18740) | ISCAS | 2026-05-18 | [⭐ 337](https://github.com/VisionOPD/Vision-OPD) | 85 |
+| [Vision-OPD: Learning to See Fine Details for Multimodal LLMs via On-Policy Self-Distillation](https://arxiv.org/abs/2605.18740) | ISCAS | 2026-05-18 | [⭐ 339](https://github.com/VisionOPD/Vision-OPD) | 85 |
+| [V-Zero: Answer-Label-Free On-Policy Distillation with Contrastive Evidence Gating for Fine-Grained Visual Reasoning](https://arxiv.org/abs/2606.25319) | Sichuan University | 2026-06-24 | [⭐ 154](https://github.com/eVI-group-SCU/V-Zero) | 11 |
 | [Beyond SFT-to-RL: Pre-alignment via Black-Box On-Policy Distillation for Multimodal RL](https://arxiv.org/abs/2604.28123) | HKUST (GZ) | 2026-04-30 | [⭐ 101](https://github.com/XIAO4579/PRISM) | 9 |
-| [V-Zero: Answer-Label-Free On-Policy Distillation with Contrastive Evidence Gating for Fine-Grained Visual Reasoning](https://arxiv.org/abs/2606.25319) | Sichuan University | 2026-06-24 | [⭐ 73](https://github.com/eVI-group-SCU/V-Zero) | 11 |
 | [ViSpec: Accelerating Vision-Language Models with Vision-Aware Speculative Decoding](https://arxiv.org/abs/2509.15235) | Peking University | 2025-09-17 | [⭐ 72](https://github.com/KangJialiang/ViSpec) | 26 |
-| [Uni-OPD: Unifying On-Policy Distillation with a Dual-Perspective Recipe](https://arxiv.org/abs/2605.03677) | Zhejiang University | 2026-05-05 | [⭐ 57](https://github.com/WenjinHou/Uni-OPD) | 54 |
+| [Uni-OPD: Unifying On-Policy Distillation with a Dual-Perspective Recipe](https://arxiv.org/abs/2605.03677) | Zhejiang University | 2026-05-05 | [⭐ 57](https://github.com/WenjinHou/Uni-OPD) | 55 |
 | [VAD: Attributing Visual Evidence for Target Reconstruction in Multimodal On-Policy Distillation](https://arxiv.org/abs/2607.28590) | Shanghai Jiao Tong University | 2026-07-30 | [⭐ 50](https://github.com/DeepExperience/VAD_Multimodal_OPD) | 7 |
 | [Speculative Decoding Reimagined for Multimodal Large Language Models](https://arxiv.org/abs/2505.14260) | Xiamen University | 2025-05-20 | [⭐ 38](https://github.com/Lyn-Lucy/MSD) | 10 |
 | [OPD-V: Visual On-Policy Self-Distillation with Modality Balance](https://arxiv.org/abs/2608.05131) | LMU Munich | 2026-08-05 | [⭐ 29](https://github.com/aniri15/OPD-V) | 9 |
@@ -140,9 +140,9 @@ Speech and audio-language models, ASR, omni models, and cross-modal transfer of 
 
 | Paper | Affiliation | Date | Code | Cited |
 | :-- | :-- | :-: | :-: | :-: |
-| [Qwen3-Omni Technical Report](https://arxiv.org/abs/2509.17765) | Alibaba | 2025-09-22 | [⭐ 4.1k](https://github.com/QwenLM/Qwen3-Omni) | 605 |
+| [Qwen3-Omni Technical Report](https://arxiv.org/abs/2509.17765) | Alibaba | 2025-09-22 | [⭐ 4.1k](https://github.com/QwenLM/Qwen3-Omni) | 608 |
 | [Step-Audio-R1 Technical Report](https://arxiv.org/abs/2511.15848) | StepFun | 2025-11-19 | [⭐ 703](https://github.com/stepfun-ai/Step-Audio-R1) | 53 |
-| [On-Policy Self-Distillation for Multi-Dialect ASR: Mastering Dialects, Retaining Mandarin](https://arxiv.org/abs/2608.11898) | NWPU | 2026-08-12 | [⭐ 100](https://github.com/ASLP-lab/CN-MultiDialect-ASR) | 2 |
+| [On-Policy Self-Distillation for Multi-Dialect ASR: Mastering Dialects, Retaining Mandarin](https://arxiv.org/abs/2608.11898) | NWPU | 2026-08-12 | [⭐ 101](https://github.com/ASLP-lab/CN-MultiDialect-ASR) | 2 |
 | [OPOD: On-Policy Omni Distillation](https://arxiv.org/abs/2607.20918) | Renmin University of China | 2026-07-23 | [⭐ 58](https://github.com/VincentZhao2002/OPOD) | 1 |
 | [ParaBridge: Bridging Paralinguistic Perception and Dialogue Behavior in Speech Language Models](https://arxiv.org/abs/2606.10581) | CUHK (Shenzhen) | 2026-06-09 | [⭐ 6](https://github.com/AmphionTeam/ParaBridge) | 7 |
 | [Reward-Tilted On-Policy Distillation for Acoustic Grounding in Audio-Language Models](https://arxiv.org/abs/2609.28778) | NEC Laboratories America | 2026-09-23 | [⭐ 1](https://github.com/KaiyangLi1992/RT-OPD) | 0 |
@@ -159,7 +159,7 @@ Speech and audio-language models, ASR, omni models, and cross-modal transfer of 
 | [OmniOPSD: Rationale-Privileged On-Policy Self-Distillation for Affective Computing](https://arxiv.org/abs/2606.15920) | Shenzhen University | 2026-06-14 | 6 |
 | [Data-Efficient On-Policy Distillation for Automatic Speech Recognition](https://arxiv.org/abs/2605.28139) | AutoArk-AI | 2026-05-27 | 1 |
 | [EchoDistill:Alignment Noisy-to-Clean Self-Distillation for Robust Audio LLMs](https://arxiv.org/abs/2605.23954) | NTU | 2026-05-11 | 0 |
-| [Qwen3.5-Omni Technical Report](https://arxiv.org/abs/2604.15804) | Alibaba | 2026-04-17 | 186 |
+| [Qwen3.5-Omni Technical Report](https://arxiv.org/abs/2604.15804) | Alibaba | 2026-04-17 | 189 |
 | [X-OPD: Cross-Modal On-Policy Distillation for Capability Alignment in Speech LLMs](https://arxiv.org/abs/2603.24596) | Tencent Hunyuan | 2026-03-06 | 17 |
 | [CORD: Bridging the Audio-Text Reasoning Gap via Weighted On-policy Cross-modal Distillation](https://arxiv.org/abs/2601.16547) | Baidu | 2026-01-23 | 11 |
 
@@ -171,8 +171,8 @@ Diffusion, flow-matching and autoregressive generators: few-step distillation, m
 
 | Paper | Affiliation | Date | Code | Cited |
 | :-- | :-- | :-: | :-: | :-: |
-| [SenseNova-U1.5: Towards Native Unified Visual Intelligence](https://arxiv.org/abs/2609.11929) | SenseTime | 2026-09-10 | [⭐ 6.9k](https://github.com/OpenSenseNova/SenseNova-U1) | 7 |
-| [On-Policy Self-Distillation in Diffusion Models](https://arxiv.org/abs/2608.24646) | ByteDance | 2026-08-25 | [⭐ 858](https://github.com/worldbench/DiffusionOPSD) | 9 |
+| [SenseNova-U1.5: Towards Native Unified Visual Intelligence](https://arxiv.org/abs/2609.11929) | SenseTime | 2026-09-10 | [⭐ 6.9k](https://github.com/OpenSenseNova/SenseNova-U1) | 8 |
+| [On-Policy Self-Distillation in Diffusion Models](https://arxiv.org/abs/2608.24646) | ByteDance | 2026-08-25 | [⭐ 863](https://github.com/worldbench/DiffusionOPSD) | 9 |
 | [Causal-rCM: A Unified Teacher-Forcing and Self-Forcing Open Recipe for Autoregressive Diffusion Distillation in Streaming Video Generation and Interactive World Models](https://arxiv.org/abs/2606.25473) | Tsinghua University | 2026-06-24 | [⭐ 823](https://github.com/NVlabs/rcm) | 28 |
 | [OPSD-V: On-Policy Self-Distillation for Post-Training Few-Step Autoregressive Video Generators](https://arxiv.org/abs/2607.08766) | Meituan | 2026-07-09 | [⭐ 697](https://github.com/MeiGen-AI/OPSD-V) | 14 |
 | [pi-Flow: Policy-Based Few-Step Generation via Imitation Distillation](https://arxiv.org/abs/2510.14974) | Stanford University | 2025-10-16 | [⭐ 477](https://github.com/Lakonik/piFlow) | 31 |
@@ -206,7 +206,7 @@ Diffusion, flow-matching and autoregressive generators: few-step distillation, m
 | [TransAnyText: Translating Arbitrary Text in E-commerce Images via Structured Visual Generation](https://arxiv.org/abs/2608.16284) | Wuhan University | 2026-08-17 | 1 |
 | [Context-Matched Distillation: Teacher Causality for Autoregressive Video Distillation](https://arxiv.org/abs/2608.13391) | NVIDIA | 2026-08-13 | 5 |
 | [DreOPD: Degraded-Reference Extrapolative On-Policy Distillation for Flow-matching Models](https://arxiv.org/abs/2608.09233) | HIT (Shenzhen) | 2026-08-10 | 2 |
-| [FlowErase-OPD: Multi-Concept Erasure via Anchored On-Policy Distillation in Flow Matching Models](https://arxiv.org/abs/2608.07620) | HIT (Shenzhen) | 2026-08-07 | 1 |
+| [FlowErase-OPD: Multi-Concept Erasure via Anchored On-Policy Distillation in Flow Matching Models](https://arxiv.org/abs/2608.07620) | HIT (Shenzhen) | 2026-08-07 | 2 |
 | [InsertFuse: A Unified Framework for Multi-Category Reference-Guided Image Insertion](https://arxiv.org/abs/2608.06490) | Shanghai Jiao Tong University | 2026-08-06 | 1 |
 | [STEP-OPD: Rethinking Output Targets and Internal Dynamics in On-Policy Distillation for Diffusion Models](https://arxiv.org/abs/2608.04887) | Shanghai Jiao Tong University | 2026-08-05 | 3 |
 | [Poly-OPD: Heterogeneous Multi-Teacher On-Policy Distillation for Capability-Selectable Flow Models](https://arxiv.org/abs/2608.04349) | Joy Future Academy | 2026-08-05 | 4 |
@@ -218,7 +218,7 @@ Diffusion, flow-matching and autoregressive generators: few-step distillation, m
 | [GeoStream: Toward Precise Camera Controlled Streaming Video Generation](https://arxiv.org/abs/2606.15162) | Carnegie Mellon University | 2026-06-13 | 5 |
 | [Knowledge Distillation for Visual Autoregressive Models](https://arxiv.org/abs/2606.06078) | Qualcomm AI Research | 2026-06-04 | 2 |
 | [On-Policy Adversarial Flow Distillation for Autoregressive Video Generation](https://arxiv.org/abs/2605.26105) | NUS | 2026-05-25 | 3 |
-| [GenEvolve: Self-Evolving Image Generation Agents via Tool-Orchestrated Visual Experience Distillation](https://arxiv.org/abs/2605.21605) | HKUST (GZ) | 2026-05-20 | 19 |
+| [GenEvolve: Self-Evolving Image Generation Agents via Tool-Orchestrated Visual Experience Distillation](https://arxiv.org/abs/2605.21605) | HKUST (GZ) | 2026-05-20 | 20 |
 | [DiffusionOPD: A Unified Perspective of On-Policy Distillation in Diffusion Models](https://arxiv.org/abs/2605.15055) | Fudan University | 2026-05-14 | 41 |
 | [D-OPSD: On-Policy Self-Distillation for Continuously Tuning Step-Distilled Diffusion Models](https://arxiv.org/abs/2605.05204) | HKUST | 2026-05-06 | 25 |
 | [Di$\mathtt{[M]}$O: Distilling Masked Diffusion Models into One-step Generator](https://arxiv.org/abs/2503.15457) | École Polytechnique | 2025-03-19 | 6 |
@@ -235,7 +235,7 @@ VLA policies, world (action) models, driving, navigation and GUI agents supervis
 | [HyperEyes: Dual-Grained Efficiency-Aware Reinforcement Learning for Parallel Multimodal Search Agents](https://arxiv.org/abs/2605.07177) | Xiaohongshu | 2026-05-08 | [⭐ 76](https://github.com/DeepExperience/HyperEyes) | 14 |
 | [UI-MOPD: Multi-Platform On-Policy Distillation for Unified GUI Agents](https://arxiv.org/abs/2607.04425) | Tsinghua University | 2026-07-05 | [⭐ 61](https://github.com/EliSpectre/UI-MOPD) | 6 |
 | [Refined Policy Distillation: From VLA Generalists to RL Experts](https://arxiv.org/abs/2503.05833) | Univ. of Tech. Nuremberg | 2025-03-06 | [⭐ 24](https://github.com/Refined-Policy-Distillation/RPD) | 31 |
-| [ME-VLM: A Unified VLM for Embodied Cognition and Agent Coordination](https://arxiv.org/abs/2609.24526) | Li Auto | 2026-09-21 | [⭐ 10](https://github.com/MachEmbodied/ME-VLM) | 1 |
+| [ME-VLM: A Unified VLM for Embodied Cognition and Agent Coordination](https://arxiv.org/abs/2609.24526) | Li Auto | 2026-09-21 | [⭐ 11](https://github.com/MachEmbodied/ME-VLM) | 1 |
 | [GeoDrive-Bench: Benchmarking Region-Specific Multimodal Reasoning in Autonomous Driving](https://arxiv.org/abs/2606.02774) | Univ. of Wisconsin-Madison | 2026-06-01 | [⭐ 2](https://github.com/gray311/CulturalDrive-Bench) | 0 |
 | [FIRE-VLA: Failure-Informed Self-Evolution for Vision-Language-Action Models in Autonomous Driving](https://arxiv.org/abs/2608.13395) | HIT | 2026-08-13 | [⭐ 1](https://github.com/forever-free1/FIRE-VLA) | 2 |
 
@@ -261,13 +261,13 @@ VLA policies, world (action) models, driving, navigation and GUI agents supervis
 | [Learn where to Click from Yourself: On-Policy Self-Distillation for GUI Grounding](https://arxiv.org/abs/2605.00642) | IIE, CAS | 2026-05-01 | 12 |
 | [Co-Evolving Policy Distillation](https://arxiv.org/abs/2604.27083) | IIE, CAS | 2026-04-29 | 5 |
 | [Device-Conditioned Neural Architecture Search for Efficient Robotic Manipulation](https://arxiv.org/abs/2604.10170) | HKU | 2026-04-11 | 0 |
-| [VLA-OPD: Bridging Offline SFT and Online RL for Vision-Language-Action Models via On-Policy Distillation](https://arxiv.org/abs/2603.26666) | HKUST (GZ) | 2026-03-27 | 12 |
+| [VLA-OPD: Bridging Offline SFT and Online RL for Vision-Language-Action Models via On-Policy Distillation](https://arxiv.org/abs/2603.26666) | HKUST (GZ) | 2026-03-27 | 13 |
 
 </details>
 
 ## Contributing
 
-Add an entry to [`papers.json`](papers.json) and open a PR. `README.md` and `index.html` are generated by [`scripts/update_stats.py`](scripts/update_stats.py), so please do not edit them by hand. Stars come from the GitHub API and citations from Semantic Scholar, refreshed daily by [a GitHub Action](.github/workflows/refresh.yml) (last run: 2026-10-19 08:52 UTC).
+Add an entry to [`papers.json`](papers.json) and open a PR. `README.md` and `index.html` are generated by [`scripts/update_stats.py`](scripts/update_stats.py), so please do not edit them by hand. Stars come from the GitHub API and citations from Semantic Scholar, refreshed daily by [a GitHub Action](.github/workflows/refresh.yml) (last run: 2026-10-20 08:32 UTC).
 
 ## Acknowledgments
 
