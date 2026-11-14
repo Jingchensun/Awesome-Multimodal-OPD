@@ -6,7 +6,7 @@
   <a href="https://jingchensun.github.io/Awesome-Multimodal-OPD/"><img src="https://img.shields.io/badge/Interactive_reader-EN_%2F_%E4%B8%AD%E6%96%87-1f6feb?style=flat-square" alt="Interactive reader"></a>
   <img src="https://img.shields.io/badge/papers-158-4E6813?style=flat-square" alt="papers">
   <img src="https://img.shields.io/badge/with_code-61-2E86C1?style=flat-square" alt="with code">
-  <img src="https://img.shields.io/badge/updated-2026.11.13-purple?style=flat-square" alt="updated">
+  <img src="https://img.shields.io/badge/updated-2026.11.14-purple?style=flat-square" alt="updated">
 </p>
 
 <p align="center">
@@ -38,25 +38,25 @@ Vision-language reasoning, VQA, fine-grained perception, OCR, medical and indust
 
 | Paper | Affiliation | Date | Code | Cited |
 | :-- | :-- | :-: | :-: | :-: |
-| [Vision-OPD: Learning to See Fine Details for Multimodal LLMs via On-Policy Self-Distillation](https://arxiv.org/abs/2605.18740) | ISCAS | 2026-05-18 | [⭐ 351](https://github.com/VisionOPD/Vision-OPD) | 99 |
-| [V-Zero: Answer-Label-Free On-Policy Distillation with Contrastive Evidence Gating for Fine-Grained Visual Reasoning](https://arxiv.org/abs/2606.25319) | Sichuan University | 2026-06-24 | [⭐ 180](https://github.com/eVI-group-SCU/V-Zero) | 12 |
+| [Vision-OPD: Learning to See Fine Details for Multimodal LLMs via On-Policy Self-Distillation](https://arxiv.org/abs/2605.18740) | ISCAS | 2026-05-18 | [⭐ 351](https://github.com/VisionOPD/Vision-OPD) | 100 |
+| [V-Zero: Answer-Label-Free On-Policy Distillation with Contrastive Evidence Gating for Fine-Grained Visual Reasoning](https://arxiv.org/abs/2606.25319) | Sichuan University | 2026-06-24 | [⭐ 180](https://github.com/eVI-group-SCU/V-Zero) | 13 |
 | [Beyond SFT-to-RL: Pre-alignment via Black-Box On-Policy Distillation for Multimodal RL](https://arxiv.org/abs/2604.28123) | HKUST (GZ) | 2026-04-30 | [⭐ 102](https://github.com/XIAO4579/PRISM) | 10 |
-| [ViSpec: Accelerating Vision-Language Models with Vision-Aware Speculative Decoding](https://arxiv.org/abs/2509.15235) | Peking University | 2025-09-17 | [⭐ 73](https://github.com/KangJialiang/ViSpec) | 28 |
+| [ViSpec: Accelerating Vision-Language Models with Vision-Aware Speculative Decoding](https://arxiv.org/abs/2509.15235) | Peking University | 2025-09-17 | [⭐ 73](https://github.com/KangJialiang/ViSpec) | 29 |
 | [Uni-OPD: Unifying On-Policy Distillation with a Dual-Perspective Recipe](https://arxiv.org/abs/2605.03677) | Zhejiang University | 2026-05-05 | [⭐ 57](https://github.com/WenjinHou/Uni-OPD) | 58 |
-| [VAD: Attributing Visual Evidence for Target Reconstruction in Multimodal On-Policy Distillation](https://arxiv.org/abs/2607.28590) | Shanghai Jiao Tong University | 2026-07-30 | [⭐ 53](https://github.com/DeepExperience/VAD_Multimodal_OPD) | 9 |
+| [VAD: Attributing Visual Evidence for Target Reconstruction in Multimodal On-Policy Distillation](https://arxiv.org/abs/2607.28590) | Shanghai Jiao Tong University | 2026-07-30 | [⭐ 53](https://github.com/DeepExperience/VAD_Multimodal_OPD) | 10 |
 | [Speculative Decoding Reimagined for Multimodal Large Language Models](https://arxiv.org/abs/2505.14260) | Xiamen University | 2025-05-20 | [⭐ 38](https://github.com/Lyn-Lucy/MSD) | 11 |
-| [OPD-V: Visual On-Policy Self-Distillation with Modality Balance](https://arxiv.org/abs/2608.05131) | LMU Munich | 2026-08-05 | [⭐ 31](https://github.com/aniri15/OPD-V) | 12 |
+| [OPD-V: Visual On-Policy Self-Distillation with Modality Balance](https://arxiv.org/abs/2608.05131) | LMU Munich | 2026-08-05 | [⭐ 32](https://github.com/aniri15/OPD-V) | 13 |
 | [Learning Visual Spatial Planning from Symbolic State via Modality-Gap-Aware Self-Distillation](https://arxiv.org/abs/2606.06076) | Tsinghua University | 2026-06-04 | [⭐ 23](https://github.com/Oranger-l/MGSD) | 2 |
-| [ViCuR: Visual Cues as Recoverable Privilege for Multimodal On-Policy Distillation](https://arxiv.org/abs/2606.05718) | Shanghai AI Laboratory | 2026-06-04 | [⭐ 22](https://github.com/tiankanghui/ViCuR) | 16 |
+| [ViCuR: Visual Cues as Recoverable Privilege for Multimodal On-Policy Distillation](https://arxiv.org/abs/2606.05718) | Shanghai AI Laboratory | 2026-06-04 | [⭐ 22](https://github.com/tiankanghui/ViCuR) | 17 |
 | [ArmorOCR: Grounded Adversarial Visual Perception via Observation-Transferred Self-Distillation](https://arxiv.org/abs/2608.20122) | Ant Group | 2026-08-20 | [⭐ 22](https://github.com/ant-research/ArmorOCR) | 0 |
 | [Fewer Tokens, More Self-Teaching: On-Policy Self-Distillation for Extreme Visual Token Reduction](https://arxiv.org/abs/2609.32353) | Shanghai Jiao Tong University | 2026-09-26 | [⭐ 17](https://github.com/Yrxxxxxxxx1007/LT-OPD) | 1 |
-| [OPD-Aha: From Linguistic Momentum to Visual Reflection in Multimodal On-Policy Distillation](https://arxiv.org/abs/2609.16459) | Arizona State University | 2026-09-15 | [⭐ 15](https://github.com/Echochef/OPD-Aha) | 1 |
+| [OPD-Aha: From Linguistic Momentum to Visual Reflection in Multimodal On-Policy Distillation](https://arxiv.org/abs/2609.16459) | Arizona State University | 2026-09-15 | [⭐ 15](https://github.com/Echochef/OPD-Aha) | 2 |
 | [Veritas++: Value-aware On-Policy Distillation for Perception-Enhanced AIGI Detection](https://arxiv.org/abs/2607.27113) | Institute of Automation, CAS | 2026-07-29 | [⭐ 14](https://github.com/EricTan7/VeritasPP) | 2 |
-| [RP-OPSD: Resolution-Privileged On-Policy Self-Distillation for Multimodal Large Language Models](https://arxiv.org/abs/2607.24447) | USTC | 2026-07-27 | [⭐ 13](https://github.com/sansanyuchen/RP-OPSD) | 8 |
+| [RP-OPSD: Resolution-Privileged On-Policy Self-Distillation for Multimodal Large Language Models](https://arxiv.org/abs/2607.24447) | USTC | 2026-07-27 | [⭐ 13](https://github.com/sansanyuchen/RP-OPSD) | 9 |
 | [Med-OPD: Improving Medical Vision-Language Models via Evidence-Aware On-Policy Distillation](https://arxiv.org/abs/2607.16303) | NUS | 2026-07-14 | [⭐ 11](https://github.com/yunhang8658/MedOPD) | 2 |
 | [H-OPD: Confidence Aware Heterogeneous Multi-Teacher Multimodal On-policy Distillation](https://arxiv.org/abs/2607.02592) | BUPT | 2026-07-01 | [⭐ 10](https://github.com/buptyqx/H-OPD) | 13 |
-| [Thinking Without Images: Internalizing Visual Manipulation with On-Policy Self-Distillation](https://arxiv.org/abs/2606.08719) | Peking University | 2026-06-07 | [⭐ 10](https://github.com/walkeralan123/Imagine-OPD) | 10 |
-| [Decomposed On-Policy Distillation for Vision-Language Reasoning: Steering Gradients for Visual Grounding](https://arxiv.org/abs/2606.00564) | KAIST | 2026-05-30 | [⭐ 8](https://github.com/hee-suk-yoon/Decomposed_OPD) | 15 |
+| [Thinking Without Images: Internalizing Visual Manipulation with On-Policy Self-Distillation](https://arxiv.org/abs/2606.08719) | Peking University | 2026-06-07 | [⭐ 10](https://github.com/walkeralan123/Imagine-OPD) | 11 |
+| [Decomposed On-Policy Distillation for Vision-Language Reasoning: Steering Gradients for Visual Grounding](https://arxiv.org/abs/2606.00564) | KAIST | 2026-05-30 | [⭐ 8](https://github.com/hee-suk-yoon/Decomposed_OPD) | 16 |
 | [SpecVLM: Fast Speculative Decoding in Vision-Language Models](https://arxiv.org/abs/2509.11815) | Xi'an Jiaotong University | 2025-09-15 | [⭐ 8](https://github.com/haiduo/SpecVLM) | 10 |
 | [Teaching the Way, Not the Answer: Privileged Tutoring Distillation for Multimodal Policy Optimization](https://arxiv.org/abs/2606.07000) | Tianjin University | 2026-06-05 | [⭐ 8](https://github.com/XszNeverSleep/PTD-PO) | 5 |
 | [Perception Before Supervision: Self-Contained Visual Distillation from Counterfactual Blind Spots](https://arxiv.org/abs/2608.09931) | MBZUAI | 2026-08-10 | [⭐ 6](https://github.com/mbzuai-oryx/CVPD) | 3 |
@@ -69,8 +69,8 @@ Vision-language reasoning, VQA, fine-grained perception, OCR, medical and indust
 
 | Paper | Affiliation | Date | Cited |
 | :-- | :-- | :-: | :-: |
-| [Revisit to Segment: Working Memory Distillation for Reasoning Segmentation](https://arxiv.org/abs/2609.34863) | Xiaohongshu | 2026-09-28 | 0 |
-| [Evidence-Aligned Multimodal On-Policy Self-Distillation for Fine-Grained Visual Understanding](https://arxiv.org/abs/2609.34672) | Beihang University | 2026-09-28 | 0 |
+| [Revisit to Segment: Working Memory Distillation for Reasoning Segmentation](https://arxiv.org/abs/2609.34863) | Xiaohongshu | 2026-09-28 | 1 |
+| [Evidence-Aligned Multimodal On-Policy Self-Distillation for Fine-Grained Visual Understanding](https://arxiv.org/abs/2609.34672) | Beihang University | 2026-09-28 | 1 |
 | [K-OPSD: Verifiable On-Policy Self-Distillation for Post-Training Vision-Language Models on AEC Drawings](https://arxiv.org/abs/2609.34082) | Amazon Web Services | 2026-09-28 | 0 |
 | [SCOPD: Sparse-Context On-Policy Self-Distillation for Efficient Vision-Language Models](https://arxiv.org/abs/2609.34044) | University of Toronto | 2026-09-28 | 0 |
 | [CT-OPD: Counterfactual Trace On-Policy Distillation for Diffusion Vision-Language Models](https://arxiv.org/abs/2609.32781) | Institute of Automation, CAS | 2026-09-26 | 0 |
@@ -78,7 +78,7 @@ Vision-language reasoning, VQA, fine-grained perception, OCR, medical and indust
 | [Progressive-View On-Policy Distillation for Regional-to-Global Transfer in Multimodal LLMs](https://arxiv.org/abs/2609.32333) | Baidu | 2026-09-26 | 0 |
 | [Pistis Technical Report](https://arxiv.org/abs/2609.28554) | ByteDance | 2026-09-23 | 0 |
 | [BAS-OPD: Budget-Aware Selective On-Policy Self-Distillation for Fine-Grained Multimodal Perception](https://arxiv.org/abs/2609.25891) | HFIPS, Chinese Academy of Sciences | 2026-09-22 | 0 |
-| [Spatial-Interactor: Learning Spatial Reasoning through Interaction with the Observable Physical World](https://arxiv.org/abs/2609.23038) | Zhejiang University | 2026-09-19 | 1 |
+| [Spatial-Interactor: Learning Spatial Reasoning through Interaction with the Observable Physical World](https://arxiv.org/abs/2609.23038) | Zhejiang University | 2026-09-19 | 2 |
 | [ReDraft, Don't Just Distill: Reference-Driven Revision for Continual VLLM Post-Training](https://arxiv.org/abs/2609.16639) | Fudan University | 2026-09-15 | 1 |
 | [Reason What Matters: Retrieval-Grounded Reasoning for Universal Multimodal Embeddings](https://arxiv.org/abs/2609.15296) | Tsinghua University | 2026-09-14 | 0 |
 | [CA-OPD: Confidence-Aware On-Policy Distillation for Structured Visual Prediction](https://arxiv.org/abs/2609.02401) | Tianjin University | 2026-09-02 | 2 |
@@ -90,7 +90,7 @@ Vision-language reasoning, VQA, fine-grained perception, OCR, medical and indust
 | [Distill What the Student Can See: Fisher-Projected On-Policy Distillation for Vision-Language Models](https://arxiv.org/abs/2608.01263) | Tianjin University | 2026-08-02 | 5 |
 | [Correcting What You Cannot See: Credit Assignment for Perception Distillation in Multimodal Reasoners](https://arxiv.org/abs/2607.28336) | — | 2026-07-30 | 0 |
 | [Self-Boosting Vision-Language Models with Noisy Student On-Policy Self-Distillation](https://arxiv.org/abs/2607.23125) | HKUST (GZ) | 2026-07-25 | 4 |
-| [Visual Contrastive Self-Distillation](https://arxiv.org/abs/2607.21556) | UMD | 2026-07-23 | 10 |
+| [Visual Contrastive Self-Distillation](https://arxiv.org/abs/2607.21556) | UMD | 2026-07-23 | 11 |
 | [MOPDA: Mixed-Trajectory On-Policy Distillation for Language-Guided Industrial Anomaly Detection](https://arxiv.org/abs/2607.18850) | Tsinghua University | 2026-07-21 | 1 |
 | [OvisOCR2 Technical Report](https://arxiv.org/abs/2607.13639) | Alibaba | 2026-07-15 | 8 |
 | [MOSAIC: Adaptive Inter-layer Composition for Efficient Heterogeneous Vision-Language Models](https://arxiv.org/abs/2607.09029) | Li Auto | 2026-07-10 | 0 |
@@ -100,7 +100,7 @@ Vision-language reasoning, VQA, fine-grained perception, OCR, medical and indust
 | [Visual-Advantage On-Policy Distillation for Vision-Language Models](https://arxiv.org/abs/2605.21924) | Institute of Automation, CAS | 2026-05-21 | 32 |
 | [DeltaPrompts: Escaping the Zero-Delta Trap in Multimodal Distillation](https://arxiv.org/abs/2605.15532) | NVIDIA | 2026-05-15 | 1 |
 | [VOLD: Reasoning Transfer from LLMs to Vision-Language Models via On-Policy Distillation](https://arxiv.org/abs/2510.23497) | University of Tuebingen | 2025-10-27 | 35 |
-| [MASSV: Multimodal Adaptation and Self-Data Distillation for Speculative Decoding of Vision-Language Models](https://arxiv.org/abs/2505.10526) | Cerebras | 2025-05-15 | 6 |
+| [MASSV: Multimodal Adaptation and Self-Data Distillation for Speculative Decoding of Vision-Language Models](https://arxiv.org/abs/2505.10526) | Cerebras | 2025-05-15 | 7 |
 
 </details>
 
@@ -140,7 +140,7 @@ Speech and audio-language models, ASR, omni models, and cross-modal transfer of 
 
 | Paper | Affiliation | Date | Code | Cited |
 | :-- | :-- | :-: | :-: | :-: |
-| [Qwen3-Omni Technical Report](https://arxiv.org/abs/2509.17765) | Alibaba | 2025-09-22 | [⭐ 4.1k](https://github.com/QwenLM/Qwen3-Omni) | 678 |
+| [Qwen3-Omni Technical Report](https://arxiv.org/abs/2509.17765) | Alibaba | 2025-09-22 | [⭐ 4.1k](https://github.com/QwenLM/Qwen3-Omni) | 684 |
 | [Step-Audio-R1 Technical Report](https://arxiv.org/abs/2511.15848) | StepFun | 2025-11-19 | [⭐ 702](https://github.com/stepfun-ai/Step-Audio-R1) | 58 |
 | [On-Policy Self-Distillation for Multi-Dialect ASR: Mastering Dialects, Retaining Mandarin](https://arxiv.org/abs/2608.11898) | NWPU | 2026-08-12 | [⭐ 106](https://github.com/ASLP-lab/CN-MultiDialect-ASR) | 2 |
 | [OPOD: On-Policy Omni Distillation](https://arxiv.org/abs/2607.20918) | Renmin University of China | 2026-07-23 | [⭐ 60](https://github.com/VincentZhao2002/OPOD) | 1 |
@@ -159,7 +159,7 @@ Speech and audio-language models, ASR, omni models, and cross-modal transfer of 
 | [OmniOPSD: Rationale-Privileged On-Policy Self-Distillation for Affective Computing](https://arxiv.org/abs/2606.15920) | Shenzhen University | 2026-06-14 | 11 |
 | [Data-Efficient On-Policy Distillation for Automatic Speech Recognition](https://arxiv.org/abs/2605.28139) | AutoArk-AI | 2026-05-27 | 1 |
 | [EchoDistill:Alignment Noisy-to-Clean Self-Distillation for Robust Audio LLMs](https://arxiv.org/abs/2605.23954) | NTU | 2026-05-11 | 0 |
-| [Qwen3.5-Omni Technical Report](https://arxiv.org/abs/2604.15804) | Alibaba | 2026-04-17 | 222 |
+| [Qwen3.5-Omni Technical Report](https://arxiv.org/abs/2604.15804) | Alibaba | 2026-04-17 | 223 |
 | [X-OPD: Cross-Modal On-Policy Distillation for Capability Alignment in Speech LLMs](https://arxiv.org/abs/2603.24596) | Tencent Hunyuan | 2026-03-06 | 18 |
 | [CORD: Bridging the Audio-Text Reasoning Gap via Weighted On-policy Cross-modal Distillation](https://arxiv.org/abs/2601.16547) | Baidu | 2026-01-23 | 11 |
 
@@ -176,10 +176,10 @@ Diffusion, flow-matching and autoregressive generators: few-step distillation, m
 | [Causal-rCM: A Unified Teacher-Forcing and Self-Forcing Open Recipe for Autoregressive Diffusion Distillation in Streaming Video Generation and Interactive World Models](https://arxiv.org/abs/2606.25473) | Tsinghua University | 2026-06-24 | [⭐ 831](https://github.com/NVlabs/rcm) | 38 |
 | [OPSD-V: On-Policy Self-Distillation for Post-Training Few-Step Autoregressive Video Generators](https://arxiv.org/abs/2607.08766) | Meituan | 2026-07-09 | [⭐ 701](https://github.com/MeiGen-AI/OPSD-V) | 22 |
 | [pi-Flow: Policy-Based Few-Step Generation via Imitation Distillation](https://arxiv.org/abs/2510.14974) | Stanford University | 2025-10-16 | [⭐ 491](https://github.com/Lakonik/piFlow) | 37 |
-| [AnyFlow: Any-Step Video Diffusion Model with On-Policy Flow Map Distillation](https://arxiv.org/abs/2605.13724) | NUS | 2026-05-13 | [⭐ 450](https://github.com/NVlabs/AnyFlow) | 39 |
-| [LiveTalk: Real-Time Multimodal Interactive Video Diffusion via Improved On-Policy Distillation](https://arxiv.org/abs/2512.23576) | SII / SJTU | 2025-12-29 | [⭐ 354](https://github.com/GAIR-NLP/LiveTalk) | 10 |
+| [AnyFlow: Any-Step Video Diffusion Model with On-Policy Flow Map Distillation](https://arxiv.org/abs/2605.13724) | NUS | 2026-05-13 | [⭐ 450](https://github.com/NVlabs/AnyFlow) | 40 |
+| [LiveTalk: Real-Time Multimodal Interactive Video Diffusion via Improved On-Policy Distillation](https://arxiv.org/abs/2512.23576) | SII / SJTU | 2025-12-29 | [⭐ 354](https://github.com/GAIR-NLP/LiveTalk) | 11 |
 | [Flow-OPD: On-Policy Distillation for Flow Matching Models](https://arxiv.org/abs/2605.08063) | USTC | 2026-05-08 | [⭐ 313](https://github.com/CostaliyA/Flow-OPD) | 49 |
-| [Scaling Properties of Text Conditioning in Visual Generation](https://arxiv.org/abs/2607.29679) | ByteDance | 2026-07-31 | [⭐ 191](https://github.com/heheyas/context-scaling) | 5 |
+| [Scaling Properties of Text Conditioning in Visual Generation](https://arxiv.org/abs/2607.29679) | ByteDance | 2026-07-31 | [⭐ 191](https://github.com/heheyas/context-scaling) | 6 |
 | [Self-OPD: On-Policy Distillation for Flow Matching Models without Teacher](https://arxiv.org/abs/2608.26872) | Tsinghua University | 2026-08-27 | [⭐ 54](https://github.com/Shiy-Zhang/Self-OPD) | 3 |
 | [CollectionLoRA: Collecting 50 Effects in 1 LoRA via Multi-Teacher On-Policy Distillation](https://arxiv.org/abs/2605.25378) | Zhejiang University | 2026-05-25 | [⭐ 35](https://github.com/Qwen-Applications/CollectionLoRA) | 3 |
 | [KwaiMind Technical Report](https://arxiv.org/abs/2609.26375) | Kuaishou | 2026-09-22 | [⭐ 30](https://github.com/KwaiMmu/KwaiMind) | 0 |
@@ -213,7 +213,7 @@ Diffusion, flow-matching and autoregressive generators: few-step distillation, m
 | [Any-OPD: Heterogeneous On-Policy Distillation for Flow-Matching Models via Representation-Space Bridging](https://arxiv.org/abs/2608.03316) | Joy Future Academy | 2026-08-04 | 5 |
 | [Rethinking Classifier-Free Guidance in On-Policy Diffusion Distillation](https://arxiv.org/abs/2607.24731) | Alibaba | 2026-07-27 | 7 |
 | [FlowCTS: On-policy Continuous Trajectory Supervision of Flow Models](https://arxiv.org/abs/2607.24522) | Northeastern University | 2026-07-27 | 1 |
-| [Qwen-Image-2.0-RL Technical Report](https://arxiv.org/abs/2606.27608) | Alibaba | 2026-06-25 | 10 |
+| [Qwen-Image-2.0-RL Technical Report](https://arxiv.org/abs/2606.27608) | Alibaba | 2026-06-25 | 11 |
 | [MaineCoon: Pursuing A Real-Time Audio-Visual Social World Model](https://arxiv.org/abs/2606.17800) | Catnip AI | 2026-06-16 | 9 |
 | [GeoStream: Toward Precise Camera Controlled Streaming Video Generation](https://arxiv.org/abs/2606.15162) | Carnegie Mellon University | 2026-06-13 | 5 |
 | [Knowledge Distillation for Visual Autoregressive Models](https://arxiv.org/abs/2606.06078) | Qualcomm AI Research | 2026-06-04 | 2 |
@@ -247,7 +247,7 @@ VLA policies, world (action) models, driving, navigation and GUI agents supervis
 | [PIVOT: Pivot-Aware On Policy Self Distillation for Multi-Turn VLM Agents](https://arxiv.org/abs/2609.35303) | HKUST (GZ) | 2026-09-28 | 0 |
 | [WAM-OPD: Sharpening World Action Models via On-Policy Distillation](https://arxiv.org/abs/2609.34250) | USTC | 2026-09-28 | 0 |
 | [PlanGuard: A Guardrail for Multi-Step Plan Safety in Embodied Agents](https://arxiv.org/abs/2609.32801) | Anhui Key Lab of Digital Security | 2026-09-26 | 0 |
-| [Learn How to Act from Your Own Interactions: On-Policy Self-Distillation for GUI Agents](https://arxiv.org/abs/2609.27307) | IIE, CAS | 2026-09-23 | 0 |
+| [Learn How to Act from Your Own Interactions: On-Policy Self-Distillation for GUI Agents](https://arxiv.org/abs/2609.27307) | IIE, CAS | 2026-09-23 | 1 |
 | [WAM-OPD: On-Policy Distillation for World Action Models](https://arxiv.org/abs/2608.22364) | UCL | 2026-08-23 | 2 |
 | [Test-Time Self-Evolving GUI Visual Grounding via Reflection-Guided On-Policy Self-Distillation](https://arxiv.org/abs/2608.11191) | NJUST | 2026-08-11 | 2 |
 | [SkillLens: Visual Skill Cards for Retrieval-Augmented GUI Action Prediction and On-Policy Distillation](https://arxiv.org/abs/2608.10775) | Peking University | 2026-08-11 | 4 |
@@ -261,13 +261,13 @@ VLA policies, world (action) models, driving, navigation and GUI agents supervis
 | [Learn where to Click from Yourself: On-Policy Self-Distillation for GUI Grounding](https://arxiv.org/abs/2605.00642) | IIE, CAS | 2026-05-01 | 14 |
 | [Co-Evolving Policy Distillation](https://arxiv.org/abs/2604.27083) | IIE, CAS | 2026-04-29 | 7 |
 | [Device-Conditioned Neural Architecture Search for Efficient Robotic Manipulation](https://arxiv.org/abs/2604.10170) | HKU | 2026-04-11 | 0 |
-| [VLA-OPD: Bridging Offline SFT and Online RL for Vision-Language-Action Models via On-Policy Distillation](https://arxiv.org/abs/2603.26666) | HKUST (GZ) | 2026-03-27 | 18 |
+| [VLA-OPD: Bridging Offline SFT and Online RL for Vision-Language-Action Models via On-Policy Distillation](https://arxiv.org/abs/2603.26666) | HKUST (GZ) | 2026-03-27 | 19 |
 
 </details>
 
 ## Contributing
 
-Add an entry to [`papers.json`](papers.json) and open a PR. `README.md` and `index.html` are generated by [`scripts/update_stats.py`](scripts/update_stats.py), so please do not edit them by hand. Stars come from the GitHub API and citations from Semantic Scholar, refreshed daily by [a GitHub Action](.github/workflows/refresh.yml) (last run: 2026-11-13 10:58 UTC).
+Add an entry to [`papers.json`](papers.json) and open a PR. `README.md` and `index.html` are generated by [`scripts/update_stats.py`](scripts/update_stats.py), so please do not edit them by hand. Stars come from the GitHub API and citations from Semantic Scholar, refreshed daily by [a GitHub Action](.github/workflows/refresh.yml) (last run: 2026-11-14 10:25 UTC).
 
 ## Acknowledgments
 
