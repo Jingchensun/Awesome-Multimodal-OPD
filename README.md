@@ -6,7 +6,7 @@
   <a href="https://jingchensun.github.io/Awesome-Multimodal-OPD/"><img src="https://img.shields.io/badge/Interactive_reader-EN_%2F_%E4%B8%AD%E6%96%87-1f6feb?style=flat-square" alt="Interactive reader"></a>
   <img src="https://img.shields.io/badge/papers-158-4E6813?style=flat-square" alt="papers">
   <img src="https://img.shields.io/badge/with_code-61-2E86C1?style=flat-square" alt="with code">
-  <img src="https://img.shields.io/badge/updated-2026.11.21-purple?style=flat-square" alt="updated">
+  <img src="https://img.shields.io/badge/updated-2026.11.22-purple?style=flat-square" alt="updated">
 </p>
 
 <p align="center">
@@ -29,7 +29,7 @@ Search, filter and read a four-point summary of every paper in the **[interactiv
 | 6 | [Kwai Keye-VL-2.0 Technical Report](https://arxiv.org/abs/2606.10651) | Video | Kuaishou | [⭐ 817](https://github.com/Kwai-Keye/Keye) |
 | 7 | [OPSD-V: On-Policy Self-Distillation for Post-Training Few-Step Autoregressive Video Generators](https://arxiv.org/abs/2607.08766) | Generation | Meituan | [⭐ 704](https://github.com/MeiGen-AI/OPSD-V) |
 | 8 | [Step-Audio-R1 Technical Report](https://arxiv.org/abs/2511.15848) | Audio | StepFun | [⭐ 703](https://github.com/stepfun-ai/Step-Audio-R1) |
-| 9 | [pi-Flow: Policy-Based Few-Step Generation via Imitation Distillation](https://arxiv.org/abs/2510.14974) | Generation | Stanford University | [⭐ 516](https://github.com/Lakonik/piFlow) |
+| 9 | [pi-Flow: Policy-Based Few-Step Generation via Imitation Distillation](https://arxiv.org/abs/2510.14974) | Generation | Stanford University | [⭐ 542](https://github.com/Lakonik/piFlow) |
 | 10 | [AnyFlow: Any-Step Video Diffusion Model with On-Policy Flow Map Distillation](https://arxiv.org/abs/2605.13724) | Generation | NUS | [⭐ 452](https://github.com/NVlabs/AnyFlow) |
 
 <h2 id="imageqa">🖼️ Image Domain</h2>
@@ -112,8 +112,8 @@ Video QA, long-video and streaming understanding, video reasoning and temporal g
 | :-- | :-- | :-: | :-: | :-: |
 | [Kwai Keye-VL-2.0 Technical Report](https://arxiv.org/abs/2606.10651) | Kuaishou | 2026-06-09 | [⭐ 817](https://github.com/Kwai-Keye/Keye) | 8 |
 | [Enhancing Video-LLM Reasoning via Agent-of-Thoughts Distillation](https://arxiv.org/abs/2412.01694) 🔎 | Shanghai Jiao Tong University | 2024-12-02 | [⭐ 61](https://github.com/zhengrongz/AoTD) | 47 |
-| [VISD: Enhancing Video Reasoning via Structured Self-Distillation](https://arxiv.org/abs/2605.06094) | HUST | 2026-05-07 | [⭐ 26](https://github.com/Koreyoshi01/VISD) | 17 |
-| [World Models Meet Language Models: On the Complementarity of Concrete and Abstract Reasoning](https://arxiv.org/abs/2606.03603) | University of Macau | 2026-06-02 | [⭐ 24](https://github.com/yczhou001/PF-OPSD) | 3 |
+| [VISD: Enhancing Video Reasoning via Structured Self-Distillation](https://arxiv.org/abs/2605.06094) | HUST | 2026-05-07 | [⭐ 25](https://github.com/Koreyoshi01/VISD) | 17 |
+| [World Models Meet Language Models: On the Complementarity of Concrete and Abstract Reasoning](https://arxiv.org/abs/2606.03603) | University of Macau | 2026-06-02 | [⭐ 25](https://github.com/yczhou001/PF-OPSD) | 3 |
 | [World Model Self-Distillation: Training World Models to Solve General Tasks](https://arxiv.org/abs/2606.12072) | University of Bern | 2026-06-10 | [⭐ 19](https://github.com/sebastian-stapf/world-model-self-distillation) | 1 |
 | [Temporal Self-Distillation: Learning Visual State Tracking in Videos Without Supervision](https://arxiv.org/abs/2609.04203) | Aalto University | 2026-09-03 | [⭐ 4](https://github.com/AaltoML/s3t) | 1 |
 
@@ -175,7 +175,7 @@ Diffusion, flow-matching and autoregressive generators: few-step distillation, m
 | [On-Policy Self-Distillation in Diffusion Models](https://arxiv.org/abs/2608.24646) | ByteDance | 2026-08-25 | [⭐ 1.1k](https://github.com/worldbench/DiffusionOPSD) | 14 |
 | [Causal-rCM: A Unified Teacher-Forcing and Self-Forcing Open Recipe for Autoregressive Diffusion Distillation in Streaming Video Generation and Interactive World Models](https://arxiv.org/abs/2606.25473) | Tsinghua University | 2026-06-24 | [⭐ 832](https://github.com/NVlabs/rcm) | 41 |
 | [OPSD-V: On-Policy Self-Distillation for Post-Training Few-Step Autoregressive Video Generators](https://arxiv.org/abs/2607.08766) | Meituan | 2026-07-09 | [⭐ 704](https://github.com/MeiGen-AI/OPSD-V) | 28 |
-| [pi-Flow: Policy-Based Few-Step Generation via Imitation Distillation](https://arxiv.org/abs/2510.14974) | Stanford University | 2025-10-16 | [⭐ 516](https://github.com/Lakonik/piFlow) | 41 |
+| [pi-Flow: Policy-Based Few-Step Generation via Imitation Distillation](https://arxiv.org/abs/2510.14974) | Stanford University | 2025-10-16 | [⭐ 542](https://github.com/Lakonik/piFlow) | 41 |
 | [AnyFlow: Any-Step Video Diffusion Model with On-Policy Flow Map Distillation](https://arxiv.org/abs/2605.13724) | NUS | 2026-05-13 | [⭐ 452](https://github.com/NVlabs/AnyFlow) | 45 |
 | [LiveTalk: Real-Time Multimodal Interactive Video Diffusion via Improved On-Policy Distillation](https://arxiv.org/abs/2512.23576) | SII / SJTU | 2025-12-29 | [⭐ 357](https://github.com/GAIR-NLP/LiveTalk) | 12 |
 | [Flow-OPD: On-Policy Distillation for Flow Matching Models](https://arxiv.org/abs/2605.08063) | USTC | 2026-05-08 | [⭐ 313](https://github.com/CostaliyA/Flow-OPD) | 51 |
@@ -267,7 +267,7 @@ VLA policies, world (action) models, driving, navigation and GUI agents supervis
 
 ## Contributing
 
-Add an entry to [`papers.json`](papers.json) and open a PR. `README.md` and `index.html` are generated by [`scripts/update_stats.py`](scripts/update_stats.py), so please do not edit them by hand. Stars come from the GitHub API and citations from Semantic Scholar, refreshed daily by [a GitHub Action](.github/workflows/refresh.yml) (last run: 2026-11-21 11:01 UTC).
+Add an entry to [`papers.json`](papers.json) and open a PR. `README.md` and `index.html` are generated by [`scripts/update_stats.py`](scripts/update_stats.py), so please do not edit them by hand. Stars come from the GitHub API and citations from Semantic Scholar, refreshed daily by [a GitHub Action](.github/workflows/refresh.yml) (last run: 2026-11-22 11:24 UTC).
 
 ## Acknowledgments
 
